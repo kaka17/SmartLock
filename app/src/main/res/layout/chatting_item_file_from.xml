@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ChattingUIContent"
+    android:layout_below="@+id/chatting_time_tv" >
+
+    <include layout="@layout/chatting_item_avatar_from" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chatting_user_tv"
+            style="@style/ChattingUISenderText"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_chatting_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_file_mp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dip"
+                android:maxHeight="230dip"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_play_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_play" />
+        </FrameLayout>
+        
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_filesize"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            />
+
+        <com.sht.smartlock.phone.common.base.CCPTextView
+            android:id="@+id/chatting_content_itv"
+            style="@style/ChattingUIText"
+            android:background="@drawable/chatfrom_bg"
+            android:drawableLeft="@drawable/attachment_icon"
+            android:drawablePadding="4.0dip"
+            android:gravity="center_vertical"
+            android:maxWidth="225.0dip"
+            android:minHeight="@dimen/ChattingContentMinHeight"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="15.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

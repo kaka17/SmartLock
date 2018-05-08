@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/couponsitembg"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/couponsbg"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优惠使用规则"
+        android:paddingTop="24dp"
+        android:paddingBottom="26dp"
+        android:textSize="20sp"
+        android:textColor="@color/TextBlack054"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="1.优惠将以“代金券”、“红包”、“礼券”、“折扣券”的形式呈现
+        \n2.优惠券仅限在有效期内并在对应酒店使用
+        \n3.“礼券”为赠送给入住酒店的用户相应的物品，请凭“礼券”到酒店前台领取
+        \n4.订购酒店产品时，带有相应标志的产品才能使用优惠券，相应金额或优惠以退订界面展示为准"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="14sp"
+        android:textColor="@color/TextBlack087"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="16dp"
+        />
+    </LinearLayout>
+
+</LinearLayout>

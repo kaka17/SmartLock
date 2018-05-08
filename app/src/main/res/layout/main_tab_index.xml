@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <include layout="@layout/opendoor"></include>
+    <include layout="@layout/lockserver"></include>
+
+		<com.sht.smartlock.ui.activity.myview.MyViewPager
+            android:layout_width="match_parent"
+			android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+		</com.sht.smartlock.ui.activity.myview.MyViewPager>
+
+
+
+</LinearLayout>

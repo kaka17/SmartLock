@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您有一笔娱乐消费计入账单!"
+        android:textColor="@color/TextBlack087"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvOrderType"
+        android:layout_below="@+id/tvOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消费类型：餐厅"
+        android:textColor="@color/TextBlack087"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvMoney0"
+        android:layout_below="@+id/tvOrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总金额："
+        android:textColor="@color/TextBlack087"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvMoney01"
+        android:layout_below="@+id/tvOrderType"
+        android:layout_toRightOf="@+id/tvMoney0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥180"
+        android:textColor="@color/LOCKPice"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="20dp"
+        android:src="@drawable/rightarrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        />
+
+</RelativeLayout>

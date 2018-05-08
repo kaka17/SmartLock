@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.mine.OrderingActivity">
+
+    <include layout="@layout/title_panel"
+        android:id="@+id/include" />
+
+    <View
+        android:id="@+id/vTopLine"
+        android:layout_width="fill_parent"
+        android:layout_height="20px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"
+        android:layout_below="@+id/include" />
+    <RelativeLayout
+        android:id="@+id/reEnpty"
+        android:layout_below="@+id/vLineBill1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:src="@drawable/pic_anime_failed"
+            />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listOrdering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_below="@+id/vTopLine"/>
+
+</RelativeLayout>

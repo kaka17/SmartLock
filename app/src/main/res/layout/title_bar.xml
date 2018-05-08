@@ -1,0 +1,144 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_title_height"
+    android:background="@color/MAINBGTAB"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/tvTitleBar"
+        style="@style/titlename"
+        android:layout_centerInParent="true"
+        android:text="开门"
+        />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/linRgChecked"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rgTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="66%"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/rbService"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="32dp"
+                android:text=""
+                android:checked="true"
+                android:button="@null"
+                android:layout_weight="1"
+                android:background="@drawable/servicercenterbymain"
+                />
+            <RadioButton
+                android:id="@+id/rbCall"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/servicereditbymain"
+                />
+        </RadioGroup>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivMe"
+        android:layout_width="58dp"
+        android:layout_height="54dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_user"
+        android:scaleType="fitXY"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:id="@+id/ivOpenDoorRecord"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:scaleType="fitXY"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/btn_history"
+        android:layout_marginRight="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/ivScan"
+        android:visibility="visible"
+        />
+    <ImageView
+        android:id="@+id/ivScan"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:scaleType="fitXY"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/btn_scanbar"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/messagecenter"
+        android:id="@+id/iv_MyChat_History"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/unread_count_bg"
+        app:layout_heightPercent="6%w"
+        app:layout_widthPercent="6%w"
+        android:visibility="gone"
+        android:text="0"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_MyChat_Num" />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/relGuiTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whilebywhile"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/ivWord08"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/btn_skip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

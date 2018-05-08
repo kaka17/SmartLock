@@ -1,0 +1,274 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background_to_pay"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="我是标题"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="2%"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/line_background_to_pay"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        android:visibility="gone"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tvAbout_us"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableEnd="@drawable/rightarrow"
+            android:drawableRight="@drawable/rightarrow"
+            android:gravity="left|center"
+            android:text="@string/mation_aboutus"
+            app:layout_textSizePercent="4%w"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="0.1%"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="40%"
+            android:gravity="left|center"
+            android:text="@string/mation_checkupdate"
+            app:layout_textSizePercent="4%w"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+
+        <TextView
+            android:id="@+id/tvCheck_update"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center|right"
+            android:textSize="20dp"
+            app:layout_widthPercent="52%"
+            android:paddingRight="20dp"
+            android:text="V1.1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rightarrow"
+            />
+        <!--<TextView-->
+            <!--android:id="@+id/tvCheck_update"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:drawableEnd="@drawable/rightarrow"-->
+            <!--android:drawableRight="@drawable/rightarrow"-->
+            <!--android:gravity="left|center"-->
+            <!--android:text="V1.1"-->
+            <!--android:textSize="20sp"-->
+            <!--android:paddingLeft="150dp"-->
+            <!--android:paddingRight="20dp"/>-->
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="0.1%"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="40%"
+            android:gravity="left|center"
+            android:text="@string/mation_eliminatecach"
+            app:layout_textSizePercent="4%w"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:id="@+id/tvCache"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center|right"
+            android:textSize="20dp"
+            app:layout_widthPercent="52%"
+            android:paddingRight="20dp"
+            android:text="0 M"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rightarrow"
+            />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvCache"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:drawableEnd="@drawable/rightarrow"-->
+            <!--android:drawableRight="@drawable/rightarrow"-->
+            <!--android:gravity="left|center"-->
+            <!--android:text="40M"-->
+            <!--android:textSize="20sp"-->
+            <!--android:paddingLeft="110dp"-->
+            <!--android:paddingRight="20dp"/>-->
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="0.1%"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"/>
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="left|center"
+            android:text="@string/mation_alerttone"
+            app:layout_textSizePercent="4%w"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <ToggleButton
+            android:id="@+id/tgButtonAlert_tone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="75%"
+            app:layout_widthPercent="18%"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:checked="true"
+            android:textOn=""
+            android:textOff=""
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/togglebutton_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="0.1%"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="left|center"
+            android:text="@string/mation_circularmotion"
+            app:layout_textSizePercent="4%w"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <ToggleButton
+            android:id="@+id/tgButtonCircular_motion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="75%"
+            app:layout_widthPercent="18%"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:checked="true"
+            android:textOn=""
+            android:textOff=""
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/togglebutton_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <!--<ToggleButton-->
+            <!--android:id="@+id/tgButtonCircular_motion"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_heightPercent="80%"-->
+            <!--app:layout_widthPercent="18%"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginRight="23dp"-->
+            <!--android:layout_marginEnd="23dp"-->
+            <!--android:layout_marginBottom="3dp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:textOn=""-->
+            <!--android:textOff=""-->
+            <!--android:checked="true"-->
+            <!--android:background="@drawable/togglebutton_style"/>-->
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="0.1%"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"/>
+</com.zhy.android.percent.support.PercentLinearLayout>

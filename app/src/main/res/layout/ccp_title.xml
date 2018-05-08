@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.cloopen.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red_btn_color_normal"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.sht.smartlock.phone.common.view.CCPImageButton
+        android:id="@+id/title_btn4"
+        style="@style/CCPTitleButton"
+        android:src="@drawable/icon_topbar_back"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:minWidth="50.0dip"
+        android:gravity="center"
+        android:visibility="visible"
+        
+        android:focusable="true" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ccp_title_btn_phone"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/CCPTitle"
+                android:layout_weight="1.0"
+                android:text="@string/app_name" />
+
+            <TextView
+                style="@style/CCPTitle"
+                android:layout_weight="1.0"
+                android:text="@string/app_name"
+                android:textSize="16.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ccp_title_btn_phone"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ccp_chat_mute_notify_pressed"
+        android:visibility="gone" />
+
+    <com.sht.smartlock.phone.common.view.CCPImageButton
+        android:id="@+id/title_btn1"
+        style="@style/CCPTitleButton"
+        android:background="@drawable/xh_title_button_bg"
+        android:focusable="true" />
+
+</LinearLayout>

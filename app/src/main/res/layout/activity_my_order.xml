@@ -1,0 +1,204 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background_to_pay"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        style="@style/MainTabBg"
+        >
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            android:background="@drawable/common_tab_bg"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="@string/mation_titleCode"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/line_background_to_pay"
+        android:layout_below="@+id/include"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearBookingHotel"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/lineBalck"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/image_oder_title"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_order_hotel"
+            android:layout_marginLeft="12dp"/>
+
+
+        <TextView
+            android:id="@+id/text_oder_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableEnd="@drawable/rightarrow"
+            android:drawableRight="@drawable/rightarrow"
+            android:gravity="left|center"
+            android:text="订酒店"
+            android:textColor="@color/OrderListGray"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="fill_parent"
+        android:layout_height="20px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/line_background_to_pay"
+        android:layout_below="@+id/lineBalck1"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearOrdering"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/lineBalck2"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_order_foods"
+            android:layout_marginLeft="12dp"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableEnd="@drawable/rightarrow"
+            android:drawableRight="@drawable/rightarrow"
+            android:gravity="left|center"
+            android:textColor="@color/OrderListGray"
+            android:text="订餐"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/line_background_to_pay"
+        android:layout_below="@+id/lineBalck3"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearShopping"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/vLine"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_order_shopping"
+            android:layout_marginLeft="12dp"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableEnd="@drawable/rightarrow"
+            android:drawableRight="@drawable/rightarrow"
+            android:gravity="left|center"
+            android:textColor="@color/OrderListGray"
+            android:text="购物"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/line_background_to_pay"
+        android:layout_below="@+id/linearOrdering"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearOther"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/vLine"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_other"
+            android:layout_marginLeft="12dp"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableEnd="@drawable/rightarrow"
+            android:drawableRight="@drawable/rightarrow"
+            android:gravity="left|center"
+            android:textColor="@color/OrderListGray"
+            android:text="其他"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/line_background_to_pay"
+        android:layout_below="@+id/linearOrdering"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        />
+
+    <!--<ListView-->
+        <!--android:id="@+id/oder_list_titlelocal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/line"/>-->
+
+</com.zhy.android.percent.support.PercentLinearLayout>

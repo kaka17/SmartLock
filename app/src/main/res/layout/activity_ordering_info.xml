@@ -1,0 +1,422 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sht.smartlock.ui.activity.OrderingInfoActivity"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:onClick="onBack"
+            android:background="@drawable/common_tab_bg"
+            />
+        <TextView
+            android:id="@+id/tv_tile"
+            style="@style/words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/order_info_title" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myrelat"
+        android:layout_above="@+id/lin_Make_Order"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_Location"
+            android:src="@drawable/ic_badge"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+        <LinearLayout
+            android:id="@+id/lin_Person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+        <TextView
+            style="@style/Ordering_Info_Texts"
+            android:text=" "
+            android:id="@+id/tv_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/person"
+            android:layout_toRightOf="@+id/iv_Location"
+            android:layout_toEndOf="@+id/iv_Location" />
+
+        <TextView
+            style="@style/Ordering_Info_Texts"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:drawableLeft="@drawable/phone"
+            android:id="@+id/tv_phone"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_toEndOf="@+id/tv_name" />
+        </LinearLayout>
+        <TextView
+            style="@style/Ordering_Info_Texts"
+            android:text=" "
+            android:id="@+id/tv_Mylockna"
+            android:layout_below="@+id/lin_Person"
+            android:drawableLeft="@drawable/address"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/lin_Person"
+            android:layout_alignStart="@+id/lin_Person" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/order_info_info"
+            android:textSize="14sp"
+            android:paddingBottom="5dp"
+            android:background="@color/ViewBg"
+             />
+        <com.sht.smartlock.ui.activity.myview.MyListView
+            android:id="@+id/lv_Ordering_Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:layout_marginRight="15dp">
+        </com.sht.smartlock.ui.activity.myview.MyListView>
+
+        <RelativeLayout
+            android:id="@+id/relayPei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"
+            >
+
+          <TextView
+              android:id="@+id/tvPeiName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="配送费"
+              android:layout_marginLeft="15dp"
+              style="@style/Ordering_Info_lv_item"
+              />
+            <TextView
+                android:id="@+id/tvPeiMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Ordering_Info_lv_item"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:text="￥10"
+                android:textColor="@color/BiLLTextColor"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/OrderInfoViewbg"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/BiLLTextColor"
+                android:textSize="20sp"
+                android:text="共￥10"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv_price" />
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/ordering_infi_center"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_left"
+            android:text="@string/order_info_Remarks"
+            android:visibility="gone"
+             />
+
+        <EditText
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/et_Remarks"
+            android:background="@drawable/remarks_bg"
+            android:layout_marginBottom="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"
+            android:hint="填写备注"
+             />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_Remarks_writer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/order_info_Remarks_write"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_info_pay"
+            android:id="@+id/tv_Order_Pay_Info"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="@color/ViewBg"
+            android:layout_marginTop="10dp" />
+        <LinearLayout
+            android:id="@+id/lin_pay_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_Order_Pay_Info"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_info_pay_01"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+             />
+
+            <ImageView
+                android:id="@+id/iv_Hole_Pay"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/iocn_choosed_book"
+                android:layout_marginRight="32dp"
+
+                />
+        </LinearLayout>
+        <View
+            android:id="@+id/view_enpty"
+            android:layout_below="@+id/lin_pay_01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/interval"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        <LinearLayout
+            android:id="@+id/lin_pay_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/view_enpty"
+            android:layout_marginLeft="10dp"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_info_pay_02"
+            android:padding="10dp"
+            android:layout_weight="1"
+            />
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/iv_Ordering_PayOnOline"
+                android:src="@drawable/chenked_out"
+                android:layout_marginRight="32dp"
+                android:layout_gravity="center_vertical"
+                 />
+        </LinearLayout>
+        <View
+            android:id="@+id/view_enpty02"
+            android:layout_below="@+id/lin_pay_02"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/interval"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+        </View>
+        <LinearLayout
+            android:id="@+id/lin_pay_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/view_enpty02"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_info_pay_03"
+                android:padding="10dp"
+                android:layout_weight="1"
+                />
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/iv_Ordering_PayOnMoney"
+                android:src="@drawable/chenked_out"
+                android:layout_marginRight="32dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+        <View
+            android:layout_below="@+id/lin_pay_03"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/ViewBg"
+            >
+        </View>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+    <!-- 最后面的下单 -->
+
+    <LinearLayout
+        android:id="@+id/lin_Make_Order"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ORderTepyfs"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/shopping_cart"
+            />
+            <TextView
+                android:id="@+id/tv_Num"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/bgnumber"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="10"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ordercare_and_oreder"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            ></View>
+        <TextView
+            android:id="@+id/tv_Total_Price"
+            android:layout_width="0dp"
+            style="@style/Ordering_Info_TotalMoney"
+            android:layout_height="match_parent"
+            android:text="88"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_left"
+            android:layout_weight="2"/>
+        <TextView
+            android:id="@+id/tv_Make_Order"
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:text=""
+            android:gravity="center"
+            android:background="@drawable/btn_book_sure"
+            android:clickable="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="3dp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

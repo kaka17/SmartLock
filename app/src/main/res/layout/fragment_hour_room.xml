@@ -1,0 +1,62 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sht.smartlock.ui.activity.hourroom.HourRoomFragment">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        app:layout_paddingPercent="5%"
+        app:layout_heightPercent="15%">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@color/title_background" />
+
+        <TextView
+            android:id="@+id/tvStayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/time"
+            android:text="10-15"
+            android:textColor="@color/text_font"
+            android:textSize="20sp"
+            app:layout_textSizePercent="6%w"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/tvStayTime"
+            android:id="@+id/tvStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:drawableEnd="@drawable/submenu"
+            android:drawableRight="@drawable/submenu"
+            android:textColor="@color/text_font"
+            app:layout_textSizePercent="6%w"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+<com.handmark.pulltorefresh.library.PullToRefreshListView
+    android:id="@+id/lvHourRoom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</com.handmark.pulltorefresh.library.PullToRefreshListView>
+</com.zhy.android.percent.support.PercentLinearLayout>

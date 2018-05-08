@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sht.smartlock.ui.activity.mine.UpdataOpenDoorPwdActivity">
+
+    <include layout="@layout/title_panel"
+        android:id="@+id/include" />
+
+    <TextView
+        android:id="@+id/tvColseOpenDoorShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mation_pleaseenterpassword"
+        android:layout_marginTop="110dp"
+        android:layout_below="@+id/include"
+        android:layout_alignLeft="@+id/password_text2"
+        android:layout_alignStart="@+id/password_text2" />
+
+    <!--
+        <com.sht.smartlock.ui.activity.myview.PasswordInputView
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:cursorVisible="false"
+            android:padding="0dp"
+            android:maxLength="4"
+            android:id="@+id/password_text"
+            android:focusable="true"
+            android:layout_below="@+id/tvUpdateOpenDoorShow"
+            android:layout_centerHorizontal="true" />
+    -->
+
+    <com.sht.smartlock.ui.activity.myview.PasswordInputView
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:inputType="number"
+        android:cursorVisible="false"
+        android:padding="0dp"
+        android:maxLength="4"
+        custom:borderRadius="@dimen/custom_ev_border_radius"
+        custom:borderWidth="@dimen/custom_ev_border_width"
+        android:layout_marginTop="10dp"
+        custom:passwordLength="4"
+        custom:passwordColor="@color/black"
+        custom:passwordWidth="@dimen/custom_ev_password_width"
+        android:id="@+id/password_text2"
+        android:layout_below="@+id/tvColseOpenDoorShow"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageButton
+        android:id="@+id/btnColseOpenDoorCancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/opendoor_cancle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignTop="@+id/btnOpenDoorColseGetPassWord"
+        android:layout_alignLeft="@+id/password_text2"
+        android:layout_alignStart="@+id/password_text2" />
+
+
+    <ImageButton
+        android:id="@+id/btnOpenDoorColseGetPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_text2"
+        android:layout_alignRight="@+id/password_text2"
+        android:layout_alignEnd="@+id/password_text2"
+        android:enabled="false"
+        android:background="@drawable/opendoor_determine"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="64dp" />
+
+</RelativeLayout>

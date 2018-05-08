@@ -1,0 +1,49 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="12%w"
+        android:gravity="center_vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_persondata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ui_dialog_list_text"
+            android:text="@string/tab_mine_login_persondata"
+            android:layout_marginLeft="20dp"
+            app:layout_textSizePercent="4%w"
+            app:layout_widthPercent="85%w"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/image_rightarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rightarrow" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image_underline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline"
+        android:layout_below="@+id/image_rightarrow"
+        android:layout_gravity="center_horizontal"
+        app:layout_widthPercent="90%"
+        />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

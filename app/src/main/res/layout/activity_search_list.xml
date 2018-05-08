@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.booking.SearchListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/goBack"
+            style="@style/goback"
+            android:background="@drawable/common_tab_bg"
+            android:padding="8dp"
+            android:src="@drawable/btn_back" />
+
+        <RelativeLayout
+            android:id="@+id/reLayTime"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_time"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/tvIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入： 10/10"
+                android:textSize="14sp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/tabColor"
+                />
+            <TextView
+                android:id="@+id/tvOut"
+                android:layout_below="@+id/tvIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="离： 10/11"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/tabColor"
+                />
+
+        </RelativeLayout>
+        <TextView
+            style="@style/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="@string/search_result" />
+
+
+        <ImageView
+            android:id="@+id/ivShowMap"
+            style="@style/toolbar_click"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_location"
+             />
+    </RelativeLayout>
+
+    <include layout="@layout/view_select_date"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView style="@style/long_line"
+            android:visibility="gone"
+            ></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingTop="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="@drawable/bg_price"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/lyDistance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shortdistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="@string/the_closest" />
+
+                <ImageView
+                    android:id="@+id/distance_tab_line"
+                    style="@style/class_divider"
+                    android:src="@drawable/pic_choise"
+                    android:visibility="invisible"
+                    ></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rankAsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="@string/rank_by_price_asc" />
+
+                <ImageView
+                    android:id="@+id/low_tab_line"
+                    style="@style/class_divider"
+                    android:visibility="invisible"
+                    ></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rankDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="@string/rank_by_price_desc" />
+
+                <ImageView
+                    android:id="@+id/high_tab_line"
+                    android:visibility="invisible"
+                    style="@style/class_divider"></ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            >
+            <ImageView
+                android:id="@+id/iv01"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="10dp"
+                android:src="@drawable/pic_choise"
+                />
+            <ImageView
+                android:id="@+id/iv02"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="10dp"
+                android:src="@drawable/pic_choise"
+                />
+            <ImageView
+                android:id="@+id/iv03"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="10dp"
+                android:src="@drawable/pic_choise"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/long_line"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"></ImageView>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lvHotelList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:divider="@color/white"
+            android:listSelector="@android:color/transparent"
+            android:showDividers="none">
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+</LinearLayout>

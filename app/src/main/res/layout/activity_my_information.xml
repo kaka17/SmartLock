@@ -1,0 +1,322 @@
+
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+<com.zhy.android.percent.support.PercentRelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/app_title_height"
+    style="@style/MainTabBg">
+
+    <ImageView
+        android:id="@+id/btnmyInfoCancle"
+        android:clickable="true"
+        style="@style/goback"
+        android:src="@drawable/btn_back"
+        />
+
+
+    <TextView
+        android:id="@+id/tvTitlePanel"
+        style="@style/titlename"
+        android:layout_centerInParent="true"
+        android:text="@string/mation_titleCode"
+        />
+</com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/linMyImg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:layout_heightPercent="15%"
+        android:orientation="horizontal">
+
+        <com.sht.smartlock.ui.activity.myview.CircleImageView
+            android:id="@+id/ivMyPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pic_upond_pic"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="29%"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#bb000000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="40%"
+            android:gravity="right|center"
+            android:text="上传头像"
+            android:textColor="#bb000000"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pic_errow"
+            android:layout_gravity="center_vertical"/>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="1%"
+        android:background="@color/smallGrayColor"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/linName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="8%">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="29%"
+            android:text="编辑名字"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="#bb000000"
+            android:paddingLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tvFull_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="60%"
+            android:gravity="right|center"
+            android:singleLine="true"
+            android:text=""
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pic_errow"
+            android:layout_gravity="center_vertical"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/linCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="8%">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="29%"
+            android:text="@string/mation_IDnumber"
+            android:gravity="center_vertical"
+            android:textColor="#bb000000"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tvID_number"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="right|center"
+            android:singleLine="true"
+            android:lines="1"
+            android:text=""
+            android:ellipsize="end"
+            app:layout_widthPercent="60%"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pic_errow"
+            android:layout_gravity="center_vertical"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/smallGrayColor"/>
+    <RelativeLayout
+        android:id="@+id/reCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:id="@+id/tvCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证影印件"
+            android:textSize="16dp"
+            android:textColor="#bb000000"
+            android:layout_marginTop="16dp"
+            />
+        <TextView
+            android:layout_below="@+id/tvCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用于办理自助入住"
+            android:textSize="13dp"
+            android:paddingBottom="5dp"
+            />
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pic_errow"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:id="@+id/ivCard"
+            android:layout_below="@+id/tvCard"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:src="@drawable/car"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/smallGrayColor"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="29%"
+            android:text="@string/mation_invoicetitle"
+            android:gravity="center_vertical"
+            android:textColor="#bb000000"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvInvoice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="right|center"
+            app:layout_widthPercent="60%"
+            android:textSize="15sp"
+            android:text=""
+            android:layout_gravity="end"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pic_errow"
+            android:layout_gravity="center_vertical"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="1%"
+        android:background="@color/smallGrayColor"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/linearPicIDCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_heightPercent="10%">
+        <TextView
+            android:id="@+id/tvLocalPhotocopy_ID_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mation_photocopyIDcard"
+            app:layout_textSizePercent="4%w"
+            app:layout_widthPercent="29%"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mation_photocopyIDcardLocal"
+            android:layout_below="@+id/tvLocalPhotocopy_ID_card"
+            android:gravity="right"
+            app:layout_textSizePercent="3.5%w"
+            app:layout_widthPercent="29%"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/linearPicImageIDCard"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/textView5"
+        app:layout_widthPercent="59%"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivPhotocopy_ID_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="90%"
+            app:layout_widthPercent="30%"
+            app:layout_marginLeftPercent="69%"
+            android:layout_gravity="center_vertical"/>
+ </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pic_errow"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/linearPicImageIDCard"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"/>
+</com.zhy.android.percent.support.PercentLinearLayout>

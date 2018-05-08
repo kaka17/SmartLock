@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/chatting_bg_ll" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@+id/chatroom_member_lv" style="@style/CCPList" />
+</LinearLayout>

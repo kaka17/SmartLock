@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.FoodInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:background="@drawable/common_tab_bg"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:onClick="onBack"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="产品详情" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_Food"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="详情介绍"
+        android:padding="15dp"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tv_FoodInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dgdfgf"
+        android:padding="15dp"
+        android:textSize="14sp"
+        />
+
+
+
+</LinearLayout>

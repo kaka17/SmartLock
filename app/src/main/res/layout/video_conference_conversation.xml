@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        android:visibility="gone"
+        layout="@layout/ccp_title" />
+
+    <TextView
+        android:id="@+id/video_notice_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:background="#55BC75"
+        android:gravity="center_vertical"
+        android:minHeight="37.0dip"
+        android:paddingLeft="25.0dip"
+        android:text="@string/str_tips_no_video_c"
+        android:textColor="@android:color/white"
+        android:textSize="16.0sp" />
+
+    <ListView
+        android:id="@+id/video_conferenc_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/video_notice_tips"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2.0px"
+        android:fadingEdgeLength="0.0dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+    <RelativeLayout
+        android:id="@+id/video_conferenc_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/notice_tips"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_create_new_video_conference"
+            android:drawableLeft="@drawable/attention"
+            android:textColor="#CCCCCC"
+            android:layout_centerInParent="true"
+            android:drawablePadding="15.0dip"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/begin_create_video_conference"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/video_blue_button_selector"
+            android:drawableBottom="@drawable/video_create" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.45"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/ptr_classic_header_rotate_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pull_refresh_arrow"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"/>
+
+        <ProgressBar
+            android:id="@+id/ptr_classic_header_rotate_view_progressbar"
+            android:indeterminateDrawable="@drawable/ptr_frame_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:indeterminate="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.55"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/ptr_classic_header_rotate_view_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:text="@string/cube_ptr_refreshing" />
+
+        <TextView
+            android:id="@+id/ptr_classic_header_rotate_view_header_last_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            android:text="@string/cube_ptr_last_update" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,125 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            android:background="@drawable/common_tab_bg"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="@string/mation_titleCode"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/linearOpenDoorUpdata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        android:layout_below="@+id/include">
+        
+        <TextView
+            android:id="@+id/tvUpdataOpenPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mation_change_password"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rightarrow"
+            android:layout_alignBottom="@+id/tvUpdataOpenPwd"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="27dp" />
+
+        <ImageView
+            android:id="@+id/image_underline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="90%"
+            android:background="@drawable/underline"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/linearOpenDoorClose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        android:layout_below="@+id/include">
+
+        <TextView
+            android:id="@+id/tvUpdataOpenClosePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mation_closedoor_password"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rightarrow"
+            android:layout_alignBottom="@+id/tvUpdataOpenClosePwd"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="27dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="90%"
+            android:background="@drawable/underline"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <Button
+        android:id="@+id/btnOpendoorpwdRetrievePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        app:layout_marginRightPercent="5%"
+        android:background="@null"
+        android:text="忘记密码?"/>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

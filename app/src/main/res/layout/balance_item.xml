@@ -1,0 +1,93 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvHotleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="16dp"
+            android:text="维也纳酒店"
+            android:textColor="@color/TextBlack054"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tvTotalamountLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHotleName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="余额:"
+            android:textSize="14sp"
+            android:textColor="@color/TextBlack054"
+            android:paddingBottom="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tvTotalamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHotleName"
+            android:layout_toRightOf="@+id/tvTotalamountLocal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:paddingBottom="14dp"
+            android:textColor="@color/TextBlack054"
+            android:text="3500"
+            />
+
+        <ImageView
+            android:id="@+id/btnAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="8%w"
+            app:layout_widthPercent="15%w"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/charges"
+            />
+
+        <ImageView
+            android:id="@+id/ivSong"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_send"
+            android:layout_toRightOf="@+id/tvHotleName"/>
+
+        <ImageView
+            android:id="@+id/ivLian"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_link"
+            android:layout_toRightOf="@+id/ivSong"/>
+
+        <View
+            android:id="@+id/bancleTopline"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_702"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

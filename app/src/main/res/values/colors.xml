@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_background">#2D4D88</color>
+    <color name="bottom_background">#F5F5F5</color>
+    <color name="activity_background">#F0F0F0</color>
+    <color name="text_normal">#F0F0F0</color>
+    <color name="text_selected">#368CFF</color>
+    <color name="text_hint">#808080</color>
+    <color name="text_font">#202021</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="text_light">#3f000000</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="ui_dialog_divider">@color/list_divider_color</color>
+    <color name="list_divider_color">#DADADA</color>
+    <color name="ui_dialog_list_text">#5E5E5E</color>
+    <color name="bg_touch">@color/lightest_gray</color>
+    <color name="transparent">#00000000</color>
+    <color name="ripple_color">#585858</color>
+    <color name="text">@color/black</color>
+    <color name="theme_primary">#29CD9C</color>
+    <color name="hint_text">#B0B0B0</color>
+    <color name="theme_color">#23B086</color>
+    <color name="toolbar_background">@color/theme_color</color>
+    <color name="spinner_text">@color/white</color>
+    <color name="spinner_text_enabled">#CCCCCC</color>
+    <color name="item_background_item_frist_normal">#C4E3DB</color>
+    <color name="item_background_item_frist_selected">#A2BCB5</color>
+    <color name="item_background_item_second_normal">#BADFCD</color>
+    <color name="item_background_item_second_selected">#9AB9AA</color>
+    <color name="line_background_to_pay">#F0F0F0</color>
+    <color name="room_price">#64AA23</color>
+
+    <!-- 订餐、景色 -->
+    <!-- 烟白色 -->
+    <color name="whitesmoke">#f5f5f5</color>
+    <!--日期控件-->
+    <color name="normal_day">#ff999999</color>
+    <color name="selected_day_background">#E75F49</color>
+    <color name="selected_day_text">#fff2f2f2</color>
+
+    <!-- 环信 -->
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="common_top_bar_blue_selected">#5AAED5</color>
+
+    <color name="btn_login_normal">#00acff</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#d4d4d4</color>
+    <color name="top_bar_normal_bg">#0080FF</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <!--  -->
+    <color name="OpenDoor">#EDEDED</color>
+
+    <!-- 统一的顶部颜色 -->
+
+
+    <color name="blue_dark">#ff0c72a9</color>
+    <color name="blue_light">#ff3893cf</color>
+    <color name="color_6">#ff666666</color>
+    <color name="ordering_infi_center">#F2F2F2</color>
+    <color name="close_door_ok">#88000000</color>
+    <color name="server_Empty">#F0F0F0</color>
+    <color name="ChatRoom_Distanter">#5A5A5A</color>
+    <color name="ViewBg">#F0F0F0</color>
+    <color name="order_title">#9B9B9B</color>
+    <color name="order_Menu_title">#333333</color>
+    <color name="order_bill_text_color">#333333</color>
+    <color name="shopping_order_title">#494949</color>
+    <color name="sweet_dialog_bg_color">#F0F0F0</color>
+    <color name="open_door_record">#808080</color>
+    <color name="open_door_record_name">#8C8C8C</color>
+    <color name="opendoor_dialog_textsure">#3B3B3B</color>
+    <color name="opendoor_dialog_line">#AEB2B2</color>
+    <color name="sp_MyLockText">#61BAE4</color>
+    <color name="dialog_line_bg">#B4B4B4</color>
+    <color name="Chat_Failure">#808080</color>
+    <color name="View_line_friends">#E5E5E5</color>
+    <color name="TextBg">#404040</color>
+
+
+    <color name="abc_search_url_text_normal">#ff7fa87f</color>
+
+    <item name="abc_search_url_text_selected" type="color">@*android:color/black</item>
+    <item name="abc_search_url_text_pressed" type="color">@*android:color/black</item>
+    <item name="green_btn_color_disable" type="color">@color/ccp_green_alpha</item>
+
+    <color name="list_divider">#ffdadada</color>
+    <color name="green_btn_color_pressed">#ff298409</color>
+    <color name="normal_text_color">#ff353535</color>
+    <color name="light_text_color">#ffd7d7d7</color>
+    <color name="list_devider_color">#fff2f2f2</color>
+    <color name="progress_horizontal_green">#ff45c01a</color>
+    <color name="hint_text_color">#ff999999</color>
+    <color name="white_color_disable">#7fffffff</color>
+    <color name="ccp_green">#ff00B486</color>
+    <color name="launcher_tab_text_color">#ff636363</color>
+    <color name="launcher_tab_text_color_press">#ffc9c9c9</color>
+    <color name="ccp_green_alpha">#7f00B486</color>
+    <color name="navpage">#ffffffff</color>
+    <color name="last_msg_tv_color">#ffaaaaaa</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="footer_text_color">#ff7f7f7f</color>
+    <color name="chatroom_user_displayname_color">#A9A9A9</color>
+    <color name="form_hint_text_color">#ffdddddd</color>
+    <color name="text_disabled">#ffa8a8a8</color>
+    <color name="common_popup_menu_list_divider">#ff191919</color>
+    <color name="edit_save_btn_color_disable">#ffa8c6ed</color>
+    <color name="edit_save_btn_color_click">#ffffffff</color>
+    <color name="small_line_color">#26000000</color>
+    <color name="action_bar_tittle_color">#ffcfcfcf</color>
+    <color name="red_btn_color_normal">#ffff5454</color>
+    <color name="red_btn_color_pressed">#ffd24242</color>
+    <color name="red_btn_color_disable">#7fff5454</color>
+    <color name="text_content">#ffa19d94</color>
+    <color name="dialog_background">#fffbf6f2</color>
+    <color name="dialog_btn_press">#ffece5df</color>
+    <color name="dialog_divider">#ffe8e0da</color>
+    <color name="dialog_btn_normal">#fffbf6f2</color>
+    <color name="dialog_item_press">#ffece5df</color>
+    <color name="text_desc">#ffbebbb4</color>
+    <color name="text_title">#ff5f5f5f</color>
+
+    <color name="album_ui_bg">#ff191919</color>
+    <color name="bottom_notepad_panel_bg">#FFF4F4F4</color>
+    <color name="hint_color_white_bg">#ffc5c5c5</color>
+    <color name="devideline_listview">#ffe5e2d4</color>
+    <item name="menu_pressed_color" type="color">@color/small_line_color</item>
+    <color name="bg_warning">#fffde1b6</color>
+    <color name="text_warning">#ffb8956b</color>
+    <color name="link_color">#ff406ca2</color>
+    <item name="service_normal_color" type="color">@color/link_color</item>
+    <color name="ec_voip_interface_text_color">#bababa</color>
+    <color name="ec_voip_talk_bg_color">#ff404040</color>
+    <color name="ec_normal_text_color_disable">#7f353535</color>
+    <color name="ec_grey_btn_color_normal">#fff1f1f1</color>
+    <color name="ec_grey_btn_color_pressed">#ffd8d8d8</color>
+    <color name="ec_grey_btn_color_disable">#7fd8d8d8</color>
+    <color name="ec_grey_btn_stroke_color_normal">#ffbebebe</color>
+    <color name="ec_grey_btn_stroke_color_pressed">#ff9e9e9e</color>
+    <color name="ec_grey_btn_stroke_color_disable">#7f9e9e9e</color>
+
+    <color name="normal_text_color_disable">#7f353535</color>
+
+    <drawable name="video_notify_original_state">#55BC75</drawable>
+    <drawable name="video_notify_new_state">#222222</drawable>
+
+    <color name="ccp_alert_bg">#3F474A</color>
+
+    <color name="darkGrey">#848284</color>
+
+    <!-- version 3.6 -->
+    <!-- developer mode launcher normal color -->
+    <!-- developer mode launcher pressed color -->
+    <!-- experience mode launcher normal color -->
+    <!-- experience mode launcher normal color -->
+
+    <!-- 绿色 -->
+
+    <!-- 紫色 -->
+
+    <!-- 浅黄绿 -->
+
+    <!-- 红紫 -->
+
+    <!-- 灰色 -->
+
+    <!-- 半透明 -->
+    <color name="bill_item_color">#6CCC9B</color>
+    <color name="bill_top_color">#85D5FD</color>
+    <color name="bill_def_color">#9A9A9A</color>
+    //扫一扫
+    <color name="grgray">#686868</color>
+    <color name="UserTextBg">#33518B</color>
+
+    <color name="TextBG">#494949</color>
+    <color name="BANTOUMINGSE">#30000000</color>
+
+    <color name="rippelColor">#0099CC</color>
+
+    <color name="MainBottomBg">#f8fbff</color>
+    <color name="lockbgColor">#bbFFFFFF</color>
+    <color name="tabColor">#bb000000</color>
+    <color name="smallGrayColor">#F2F2F2</color>
+
+    <color name="MAINBGTAB">#368cff</color>
+    <color name="MAINBGMUEN">#4e9aff</color>
+    <color name="LOCKTEXTCOLOR">#eb000000</color>
+    <color name="LOCKGRAYCOLOCK">#70000000</color>
+    <color name="LOCKMANEYCOLOCK">#eb6614</color>
+    <color name="TextBlack087">#C4000000</color>
+    <color name="TextBlack054">#8a000000</color>
+    <color name="TextYellow">#FF8A01</color>
+    <color name="couponsitembg">#F2F2F2</color>
+    <color name="White087">#d0ffffff</color>
+    <color name="windowbg05">#84000000</color>
+    <color name="OenDoors_No">#368CFF</color>
+    <color name="OenDoorsTitle54">#DA000000</color>
+
+    <color name="PhotoCircle01">#44000000</color>
+    <color name="HotleTextColor">#368CFF</color>
+    <color name="HotelTouMingDu">#4D000000</color>
+    <color name="HotelTimeBg">#EEEEEE</color>
+    <color name="LOCKPice">#EB6614</color>
+    <color name="LOCKPICE">#368cff</color>
+    <color name="LOCKHourText">#d0010101</color>
+    <color name="BiLLTextColor">#Eb6614</color>
+    <color name="BalanceGragColor">#F2F2F2</color>
+    <color name="ORderTepy">#F0F0F0</color>
+    <color name="ORderTepyfs">#368cff</color>
+    <color name="OpenDoorBg">#F8F8F8</color>
+    <color name="billRoomText">#4E4E4E</color>
+    <color name="billRoomTex001">#9C9C9C</color>
+    <color name="OrderGray">#d0010101</color>
+    <color name="OrderListGray">#d0000000</color>
+    <color name="OrderInfoGray">#9E9E9E</color>
+    <color name="OrderInfoBlue">#3E8FFC</color>
+    <color name="OrderInfoViewbg">#F0F0F0</color>
+    <color name="OrderInfoText">#727272</color>
+    <color name="BindPhoneTextColor">#B0000000</color>
+    <color name="NewRegistInColorText">#368CFF</color>
+    <color name="NewRegistInColorBG">#F8F8F8</color>
+
+    <color name="TaskLine">#B5B5B5</color>
+    <color name="TaskIsIng">#368CFF</color>
+    <color name="WindowGray">#DCFFFFFF</color>
+    <color name="TouMingSe">#00FFFFFF</color>
+    <color name="whilebywhile">#98000000</color>
+
+
+</resources>

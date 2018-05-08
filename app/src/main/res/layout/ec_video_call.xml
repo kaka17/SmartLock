@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D343D"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/notice_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_point_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="25.0dip"
+        android:text="@string/str_tips_wait_invited"
+        android:textColor="@android:color/white"
+        android:textSize="16.0sp" />
+
+    <FrameLayout
+        android:id="@+id/Video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/seek_bar"
+        android:background="@drawable/video_bg"
+        android:visibility="gone" >
+
+        <SurfaceView
+            android:id="@+id/video_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" >
+        </SurfaceView>
+
+        <com.yuntongxun.ecsdk.voip.video.ECCaptureView
+            android:id="@+id/localvideo_view"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginLeft="6.0dip"
+            android:padding="2.0dip" >
+        </com.yuntongxun.ecsdk.voip.video.ECCaptureView>
+
+        <include
+            android:id="@+id/layout_dial_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            layout="@layout/ec_voip_dialerpad"/>
+
+        <ImageButton
+            android:id="@+id/camera_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="45.0dip"
+            android:background="@null"
+            android:src="@drawable/ec_voip_switch_camera"
+            android:visibility="gone" />
+        
+        <ImageButton
+            android:id="@+id/layout_call_dialnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="87.0dip"
+            android:layout_marginTop="45.0dip"
+            android:background="@null"
+            android:src="@drawable/ec_call_interface_diaerpad"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/video_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="95.0dip"
+            android:background="@null"
+            android:text="@string/vedio_switch"
+            android:textColor="@drawable/textview_color"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/call_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginTop="7.0dip"
+            android:background="@null"
+            android:text="@string/str_call_status"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/video_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/video_icon"
+        android:visibility="visible" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/video_botton_ly"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/video_botton_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#466692"
+        android:gravity="bottom"
+        android:minHeight="50.0dip"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <Button
+            android:id="@+id/video_botton_cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/video_button_cancle"
+            android:maxHeight="60.0dip"
+            android:minHeight="41.0dip"
+            android:soundEffectsEnabled="true"
+            android:text="@string/str_video_call_stop"
+            android:textColor="@android:color/white"
+            android:textSize="19.0sp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/video_call_in_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/video_call_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@+id/chronometer"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="17.0sp"
+                android:visibility="visible" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/video_stop"
+                android:textColor="@color/voip_interface_text_color"
+                android:textSize="15.0sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/video_botton_begin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toLeftOf="@+id/video_stop"
+                android:background="@drawable/video_button_begin"
+                android:maxHeight="60.0dip"
+                android:minHeight="41.0dip"
+                android:soundEffectsEnabled="true"
+                android:text="@string/str_video_call_begin"
+                android:textColor="@android:color/white"
+                android:textSize="19.0sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/video_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5.0dip"
+                android:background="@drawable/video_button_stop"
+                android:text="@string/str_video_btn_call_end"
+                android:textColor="@android:color/white"
+                android:textSize="19.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

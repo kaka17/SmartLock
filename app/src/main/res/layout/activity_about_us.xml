@@ -1,0 +1,76 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+   <com.zhy.android.percent.support.PercentRelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/app_title_height"
+       style="@style/MainTabBg">
+
+       <ImageView
+           android:id="@+id/btn_cancle"
+           android:clickable="true"
+           style="@style/goback"
+           android:src="@drawable/btn_back"
+           android:background="@drawable/common_tab_bg"
+           />
+
+
+       <TextView
+           android:id="@+id/tvTitlePanel"
+           style="@style/titlename"
+           android:layout_centerInParent="true"
+           android:text="@string/mation_titleCode"
+           />
+
+   </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="2%"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mystting_aboutus"
+        android:textColor="@color/ui_dialog_list_text"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/ui_dialog_list_text"
+        android:text="千万鼎科技有限公司"/>
+
+    <!--
+    <TextView
+        android:id="@+id/tv_TrademarkName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/mystting_trademarkname"/>
+-->
+</com.zhy.android.percent.support.PercentLinearLayout>

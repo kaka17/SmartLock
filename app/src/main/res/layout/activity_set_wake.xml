@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.SetWakeActivity">
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:background="@drawable/common_tab_bg"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:onClick="onBack"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/TitleByWake" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/pic_reminder"
+        android:layout_gravity="center_horizontal"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/TitleByWakeNoTity"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:textColor="@color/TextBlack054"
+    android:lineSpacingExtra="10dp"
+    android:textSize="12sp"
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/ViewBg"
+        android:layout_marginTop="6dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lvWake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            ></ListView>
+        <ImageView
+            android:id="@+id/ivAddTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_add_time"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

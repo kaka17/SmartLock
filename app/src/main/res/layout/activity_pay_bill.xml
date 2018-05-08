@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.booking.PayBillActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:background="@drawable/common_tab_bg" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/pay_bill" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/LOCKHourText"
+
+                android:text="@string/billnum" />
+
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/LOCKHourText"
+                android:id="@+id/tvBillnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/LOCKHourText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单总价：" />
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:textSize="14sp"
+                android:textColor="@color/LOCKHourText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/need_to_pay" />
+
+            <TextView
+                android:textColor="@color/red"
+                android:id="@+id/tvNeedToPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <ListView
+        android:id="@+id/lvPayChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>
+    <Button
+        android:id="@+id/btnEnsureToPay"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btnsurepay"
+        android:textColor="#ffffff"
+        android:text="" />
+
+</LinearLayout>

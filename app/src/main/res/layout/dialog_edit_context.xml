@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/LargePadding" >
+
+    <TextView
+        android:id="@+id/sendrequest_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/NormalTextSize" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/SmallPadding" >
+
+        <EditText
+            android:id="@+id/sendrequest_content"
+            style="@style/CCPLineEditText"
+            android:background="@drawable/input_bar_bg_active"
+            android:paddingRight="@dimen/LargerPadding"
+            android:textColor="@color/normal_text_color"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|center"
+            android:layout_margin="4.0dip"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/HintTextSize"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

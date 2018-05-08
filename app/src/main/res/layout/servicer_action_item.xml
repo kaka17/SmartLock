@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relComplete"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/ivReceive"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/pic_dot_gray"
+            android:layout_marginLeft="44dp"
+
+
+            />
+        <TextView
+            android:id="@+id/tvReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已接受"
+            android:layout_toRightOf="@+id/ivReceive"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/TextBlack087"
+
+            />
+        <TextView
+            android:id="@+id/tvServiceror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务员：王小二 "
+            android:layout_toRightOf="@+id/ivReceive"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/tvReceive"
+            android:textColor="@color/TextBlack054"
+            />
+        <TextView
+            android:id="@+id/tvReceiveTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30   2017/03/09"
+            android:layout_toRightOf="@+id/tvReceive"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/TextBlack054"
+            />
+
+        <View
+            android:id="@+id/viewLine02"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:background="@color/TaskLine"
+            android:layout_below="@+id/ivReceive"
+            android:layout_marginLeft="52dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

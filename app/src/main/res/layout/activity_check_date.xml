@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:calendar="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.booking.CheckDateActivity">
+<include layout="@layout/title_bar"></include>
+    <com.sht.smartlock.widget.calendar.DayPickerView
+        android:id="@+id/pickerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        calendar:drawRoundRect="false"
+        calendar:currentDaySelected="true"
+        calendar:lastMonth="february"
+        calendar:enablePreviousDay="false"
+        />
+
+</LinearLayout>

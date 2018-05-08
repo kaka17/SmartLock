@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:fitsSystemWindows="true"
+	android:clipToPadding="false"
+    style="@style/NavPage">
+	<RelativeLayout
+		android:id="@+id/myrelat"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/app_title_height"
+		style="@style/MainTabBg">
+
+		<ImageView
+			android:id="@+id/img_back"
+			android:onClick="onBack"
+			android:src="@drawable/btn_back"
+			style="@style/goback"
+
+			/>
+		<TextView
+			android:id="@+id/tv_Tile"
+			style="@style/words"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:text="支付结果" />
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/tvPayResult"
+	    android:layout_width="fill_parent"
+	 	android:layout_height="fill_parent"
+		android:gravity="center"
+	 	android:textColor="#ff000000"
+	 	android:textSize="20dp"
+		android:visibility="gone"
+	 	android:text=""/>
+	<TextView
+		android:id="@+id/tvMyPayInfo"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:textColor="@color/TextBlack087"
+		android:gravity="center"
+		android:textSize="18sp"
+		android:text=""
+		/>
+
+	
+</LinearLayout>

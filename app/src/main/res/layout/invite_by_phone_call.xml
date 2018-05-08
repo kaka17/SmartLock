@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage" >
+
+    <ScrollView
+        style="@style/CCPScroll"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/CCPBody" >
+
+            <TextView
+                style="@style/CCPLineLabel"
+                android:id="@+id/tv_invite_voicemeeting"
+                android:paddingLeft="0.0dip"
+                android:paddingRight="0.0dip"
+                android:text="@string/dialog_title_summary" />
+
+            <com.sht.smartlock.phone.common.base.CCPClearEditText
+                android:id="@+id/say_hi_content"
+                style="@style/CCPLineEditText"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:layout_marginTop="@dimen/NormalPadding"
+                android:inputType="textMultiLine" >
+
+                <requestFocus />
+            </com.sht.smartlock.phone.common.base.CCPClearEditText>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/LargestPadding"
+                android:baselineAligned="false"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/SmallListHeight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/CCPFontPreferenceLarge"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left|center"
+                    android:minHeight="@dimen/SmallListHeight"
+                    android:paddingLeft="@dimen/SmallPadding"
+                    android:singleLine="true"
+                    android:text="@string/dialog_title_summary" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

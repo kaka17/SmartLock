@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/bottom"
+    android:layout_marginBottom="15.0dip"
+    android:layout_marginTop="5.0dip"
+    android:orientation="vertical"
+    android:padding="15.0dip">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:textColor="@color/voip_interface_text_color"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="您的发言能让成员都听得到"
+        android:textColor="#FFFFFF"
+        android:textSize="17.0sp" />
+
+    <TextView
+        android:id="@+id/mute_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:gravity="center_horizontal"
+        android:text="可点击下方麦克风静音"
+        android:textColor="#52606C"
+        android:textSize="15.0sp" />
+</LinearLayout>

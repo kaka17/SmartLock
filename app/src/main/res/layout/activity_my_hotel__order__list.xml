@@ -1,0 +1,52 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relateMyHotelOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            />
+
+        <TextView
+            android:id="@+id/tvTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="我是标题" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/reEnpty"
+        android:layout_below="@+id/vLineBill1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:src="@drawable/pic_anime_failed"
+            />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_hoteloder"
+        android:divider="@null"
+        android:layout_below="@+id/relateMyHotelOrder"/>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

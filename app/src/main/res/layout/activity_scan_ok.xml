@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.ScanOKActivity">
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:background="@drawable/common_tab_bg"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:onClick="onBack"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="扫一扫" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linTure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+        <ImageView
+            android:id="@+id/ivIsTrue"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/pic_successful"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫码成功，酒店正在为您办理入住..."
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/UserTextBg"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/tvSure"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/scansure"
+            />
+    </LinearLayout>
+</LinearLayout>

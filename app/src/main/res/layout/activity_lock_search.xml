@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.LockSearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:clickable="true"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:onClick="onBack"
+            android:background="@drawable/common_tab_bg"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignBaseline="@+id/img_back"
+            android:layout_centerHorizontal="true"
+
+            >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/et_Search"
+            android:background="@drawable/seabar_input"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="请输入酒店名称"
+            android:singleLine="true"
+            android:paddingRight="30dp"
+            />
+
+            <ImageView
+                android:id="@+id/iv_No_Search"
+                android:layout_gravity="right"
+                android:paddingRight="5dp"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/no_search"
+                android:visibility="gone"
+                android:background="@drawable/common_tab_bg"
+                />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/myrelat"
+        android:id="@+id/recyc_SearchLock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none" />
+
+
+
+</RelativeLayout>

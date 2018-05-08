@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sht.smartlock.ui.activity.myview.CircleImageView
+        android:id="@+id/ivPic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网校"
+            android:textSize="15sp"
+            android:textColor="@color/TextBlack087"
+            />
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-15-4"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:textSize="15sp"
+                android:textColor="@color/TextBlack087"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网校昂件莱卡的顾客的昂贵的看见了拿到过就立刻阿德"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/TextBlack087"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

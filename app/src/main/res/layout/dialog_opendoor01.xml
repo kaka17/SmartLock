@@ -1,0 +1,97 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_widthPercent="18%"
+    >
+<!--
+    android:background="@drawable/order_dialog_background"
+dialog_bg
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/order_dialog_background"
+        app:layout_widthPercent="75%"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_opendoor01"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#333333"
+            />
+
+
+        <EditText
+            android:id="@+id/ed_pdw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/linearbackground"
+            android:visibility="gone"
+            android:password="true"
+            android:hint="请输入4位开门密码"
+            android:maxLength="4"
+            />
+    <View
+        android:id="@+id/dialog_Line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0.8dp"
+        android:background="@color/opendoor_dialog_line"
+        ></View>
+    <LinearLayout
+        android:id="@+id/lin_SureOrNo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="@string/dialog_opendoor_cancel"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="13sp"
+            android:textColor="@color/opendoor_dialog_textsure"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/opendoor_dialog_line"
+            android:layout_marginTop="0.5dp"
+            ></View>
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/dialog_opendoor_sure"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="13sp"
+            android:textColor="@color/opendoor_dialog_textsure"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

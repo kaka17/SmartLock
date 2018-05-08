@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.booking.SelectDestinationActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+<com.sht.smartlock.widget.edittext.ClearEditText
+    android:id="@+id/etDestination"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_weight="1"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/text_background_white"
+    android:drawableLeft="@drawable/text_search"
+    android:drawableStart="@drawable/text_search"
+    android:drawableRight="@drawable/text_clear"
+    android:drawableEnd="@drawable/text_clear"
+    android:drawablePadding="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:singleLine="true"
+    android:hint="@string/please_enter_destination"
+    />
+        <EditText
+            android:visibility="gone"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_background_white"
+            android:drawableLeft="@drawable/text_search"
+            android:drawableStart="@drawable/text_search"
+            android:drawableRight="@drawable/text_clear"
+            android:drawableEnd="@drawable/text_clear"
+
+            android:hint="@string/please_enter_destination" />
+
+        <TextView
+            android:id="@+id/tvEnsure"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ensure"
+            android:layout_margin="18dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvDestHint"
+        android:dividerHeight="0dip"
+        android:divider="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+
+    </ListView>
+</LinearLayout>

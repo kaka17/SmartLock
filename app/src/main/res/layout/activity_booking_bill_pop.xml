@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/select_time_background"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/llAriveTime"
+
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center"
+
+            android:text="@string/arrive_time" />
+
+        <ListView
+
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/lvArriveTime"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></ListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="(20:00以后需支付)"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/llAriveTime"
+        android:id="@+id/ivPopClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pop_close" />
+</RelativeLayout>

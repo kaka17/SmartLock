@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        style="@style/Ordering_Info_lv_item"
+        android:paddingLeft="15dp"
+        android:text="agdadsgafrgaergassfadsg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_Money"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        style="@style/Ordering_Info_lv_item"
+        android:text="ss"
+        android:textColor="@color/BiLLTextColor"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+       android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+
+        android:paddingRight="15dp"
+        android:layout_marginTop="6dp"
+        android:gravity="right|bottom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_order_sub"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sub"
+            android:visibility="gone"
+             />
+
+        <TextView
+            android:id="@+id/tv_Num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="11"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+             />
+
+        <ImageView
+            android:id="@+id/img_order_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@drawable/add" />
+    </LinearLayout>
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/interval"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        ></View>
+</LinearLayout>

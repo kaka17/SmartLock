@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="黄焖鸡米饭"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textColor="@color/shopping_order_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+
+        />
+        <TextView
+            android:id="@+id/tv_Money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="￥ 50"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/BiLLTextColor"
+            android:layout_marginLeft="30dp"
+            />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                >
+
+            <ImageView
+                android:id="@+id/iv_Des"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:src="@drawable/btn_deleteservicer"
+                android:padding="5dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_Num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="15"
+                android:textColor="@color/order_Menu_title"
+                android:gravity="center"
+                android:padding="5dp"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/iv_Add"
+                android:clickable="true"
+                android:padding="5dp"
+                android:gravity="center"
+                android:src="@drawable/btn_addservicer"
+                android:layout_marginRight="15dp"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/interval"
+        ></View>
+
+</LinearLayout>

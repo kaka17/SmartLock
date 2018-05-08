@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing yuntongxun Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232F3C"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.sht.smartlock.phone.ui.interphone.InterPhoneBannerView
+                android:id="@+id/notice_tips_ly"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_point_bg"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/member_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notice_tips_ly"
+                android:layout_weight="1.0"
+                android:paddingLeft="25.0dip"
+                android:paddingTop="13.0dip"
+                android:singleLine="true"
+                android:text="成员列表"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/meeting_speak_ly"
+                android:layout_below="@+id/member_tips"
+                android:paddingLeft="25.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+            </ScrollView>
+
+            <GridView
+                android:id="@+id/chatroom_member_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="25.0dip"
+                android:horizontalSpacing="1.0dip"
+                android:isScrollContainer="false"
+                android:listSelector="@null"
+                android:verticalSpacing="1.0dip"
+                android:numColumns="2"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="2.0px"
+                android:layout_above="@+id/meeting_speak_ly"
+                android:layout_below="@+id/member_tips"/>
+
+            <include
+                android:id="@+id/meeting_speak_ly"
+                layout="@layout/voice_meeting_center" />
+
+            <include
+                android:id="@+id/bottom_tips"
+                layout="@layout/voice_meeting_bottom_tips"/>
+
+            <include
+                android:id="@+id/bottom"
+                layout="@layout/meeting_mic_anim" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

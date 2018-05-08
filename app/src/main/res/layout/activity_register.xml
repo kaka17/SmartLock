@@ -1,0 +1,176 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/registerInclue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            android:background="@drawable/common_tab_bg"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="@string/mation_titleCode"
+
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <com.sht.smartlock.ui.activity.myview.CircleImageView
+        android:id="@+id/regist_image_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/registerInclue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+    </com.sht.smartlock.ui.activity.myview.CircleImageView>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/regist_linear_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        android:layout_below="@+id/regist_image_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regist_image_logo"
+        android:background="@drawable/image_username"
+        app:layout_heightPercent="10%"
+        android:hint="@string/phone"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+            />
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        android:layout_below="@+id/regist_image_logo"
+        android:orientation="horizontal"
+        android:background="@drawable/editiamgecenter">
+
+        <EditText
+            android:id="@+id/editVerificationCode"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:hint="@string/vercode"
+            android:maxLength="10"
+            android:inputType="number"
+            android:maxLines="1"/>
+
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnGetVerificationCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_ver_code"
+            android:background="@drawable/vertification_bg"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+        <EditText
+            android:id="@+id/editPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editVerificationCode"
+            android:layout_below="@+id/editVerificationCode"
+            android:background="@drawable/image_password"
+            app:layout_heightPercent="10%"
+            android:hint="@string/password"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:inputType="textPassword" />
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        app:layout_widthPercent="80%"
+
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_register_bg"
+        android:layout_below="@+id/regist_linear_data"
+        android:layout_alignRight="@+id/regist_linear_data"
+        android:layout_alignEnd="@+id/regist_linear_data" />
+
+    <Button
+        app:layout_widthPercent="80%"
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnRegister"
+        android:layout_below="@+id/btnRegister"
+        android:background="@drawable/common_tab_bg"
+        android:text="@string/login" />
+    <!--
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_centerVertical="true"
+            android:text="获取支持的国家列表" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_below="@+id/button3"
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button2"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="25dp"
+            android:text="TextView" />
+    -->
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

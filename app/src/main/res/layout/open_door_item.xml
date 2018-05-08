@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/open_door_record_name"
+        android:id="@+id/tv_Name"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="1dp"
+        android:textSize="18sp"
+        android:background="@color/white"
+        android:layout_gravity="right" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/opentime"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="10月10日"
+            android:textColor="@color/open_door_record"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:textSize="18sp"
+            android:id="@+id/tv_Date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:text="11:59"
+            android:id="@+id/tv_Time"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/open_door_record"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ViewBg"/>
+
+
+
+</LinearLayout>

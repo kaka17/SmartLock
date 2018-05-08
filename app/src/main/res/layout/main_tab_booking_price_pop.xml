@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#38000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:id="@+id/llprice_pop"
+    android:background="#ffffff">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginTopPercent="2%" />
+
+    <com.sht.smartlock.widget.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/priceRange"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        app:layout_widthPercent="90%w"
+        custom:connectingLineColor="@color/LOCKPICE"
+        custom:tickCount="5"
+        custom:tickHeight="0dp" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_heightPercent="8%h"
+        app:layout_marginBottomPercent="2%h"
+        app:layout_widthPercent="100%w">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            app:layout_widthPercent="20%w">
+
+            <ImageView
+                android:id="@+id/dot0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Price0"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dot_normal"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Price0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="￥0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_widthPercent="20%w">
+
+            <ImageView
+                android:id="@+id/dot150"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Price150"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dot_normal" />
+
+            <TextView
+                android:id="@+id/Price150"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="￥150" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            app:layout_widthPercent="20%w">
+
+            <ImageView
+                android:id="@+id/dot300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/price300"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dot_normal" />
+
+            <TextView
+                android:id="@+id/price300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="￥300" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            app:layout_widthPercent="20%w">
+
+            <ImageView
+                android:id="@+id/dot500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/price500"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dot_normal" />
+
+            <TextView
+                android:id="@+id/price500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="￥500" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            app:layout_widthPercent="20%w">
+
+            <ImageView
+                android:id="@+id/dotUnLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/priceUnLimit"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dot_normal" />
+
+            <TextView
+                android:id="@+id/priceUnLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="不限" />
+        </RelativeLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/title_background"
+        app:layout_widthPercent="90%w"></View>
+
+    <TextView
+        android:id="@+id/tvEnsure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/LOCKPICE"
+        android:gravity="center"
+        android:text="@string/ensure"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="2%" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

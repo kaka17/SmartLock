@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.OrderFoodActivity"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:background="@drawable/common_tab_bg"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:onClick="onBack"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Ordering" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/myrelat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_below="@+id/myrelat"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:baselineAligned="false"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_category_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/ORderTepy"
+            android:scrollbars="none" />
+
+        <com.sht.smartlock.ui.ordering.widget.PinnedHeaderExpandableListView
+            android:id="@+id/expand_content_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:cacheColorHint="@null"
+            android:childIndicatorLeft="0dp"
+            android:divider="@color/gray"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:scrollbars="none" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_Empty"
+            android:layout_below="@+id/myrelat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/Ordering_Empty"
+            android:visibility="gone"
+            />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/relative_bottom"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ORderTepyfs"
+         >
+
+        <RelativeLayout
+            android:id="@+id/rela_Order_menu"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/btn_order_finish"
+
+            >
+            <ImageView
+                android:id="@+id/iv_ordering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/shopping_cart"
+                />
+            <TextView
+                android:id="@+id/tv_Ordering_Num"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="10"
+                android:background="@drawable/bgnumber"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                />
+            <View
+                android:id="@+id/order_and_price"
+                android:layout_toRightOf="@+id/iv_ordering"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ordercare_and_oreder"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                >
+
+            </View>
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/order_and_price"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="@string/clear_order_empty"
+             />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_order_finish"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_book_selected"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text=""
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

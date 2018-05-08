@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvPhotoGraph"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="拍照"/>
+
+        <View
+            android:id="@+id/vPhotoGraphLine"
+            android:layout_width="350dp"
+            android:layout_height="5px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvPhotoGraph"
+            android:background="@color/light_gray"/>
+
+
+
+        <TextView
+            android:id="@+id/tvFromAlbumSelection"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/vPhotoGraphLine"
+            android:gravity="center"
+            android:text="从相册选择"/>
+
+        <View
+            android:id="@+id/vFromAlbumSelectionLine"
+            android:layout_width="350dp"
+            android:layout_height="5px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvFromAlbumSelection"
+            android:background="@color/light_gray"/>
+
+        <TextView
+            android:id="@+id/tvPhotoCancle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/vFromAlbumSelectionLine"
+            android:gravity="center"
+            android:text="取消"/>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="5px"
+            android:layout_centerHorizontal="true"
+            android:background="@color/light_gray"
+            android:layout_below="@+id/tvPhotoCancle"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

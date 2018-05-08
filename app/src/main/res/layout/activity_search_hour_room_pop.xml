@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    >
+
+
+    <TimePicker
+        android:id="@+id/tpStartTime"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="60%w"
+
+        android:layout_height="wrap_content"
+
+        android:timePickerMode="spinner"></TimePicker>
+    <ImageView
+        android:layout_marginTop="10dp"
+        app:layout_widthPercent="60%w"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/short_line"
+        ></ImageView>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       >
+
+        <TextView
+            app:layout_widthPercent="45%w"
+            android:background="@null"
+            android:gravity="center"
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/cancel"
+           />
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vertical_divider"
+
+            />
+        <TextView
+            android:gravity="center"
+            android:background="@null"
+            android:id="@+id/btnSure"
+            app:layout_widthPercent="45%w"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/ensure" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

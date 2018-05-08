@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <string-array name="birds_img">
+        <item>@drawable/eagle</item>
+        <item>@drawable/flamingo</item>
+        <item>@drawable/heron</item>
+        <item>@drawable/ostrich</item>
+        <item>@drawable/peacock</item>
+        <item>@drawable/penguin</item>
+        <item>@drawable/toucan</item>
+        <item>@drawable/turkey</item>
+        <item>@drawable/vulture</item>
+    </string-array>
+-->
+    <declare-styleable name="PasswordInputView">
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="passwordLength" format="integer"/>
+        <attr name="passwordWidth" format="dimension"/>
+        <attr name="passwordColor" format="color"/>
+        <attr name="passwordRadius" format="dimension"/>
+    </declare-styleable>
+
+    <string-array name="group_join_model">
+        <item>默认直接加入</item>
+        <item>需要身份验证</item>
+    </string-array>
+    <string-array name="chat_menu">
+        <item>删除</item>
+        <item>复制消息</item>
+    </string-array>
+    <string-array name="chat_call">
+        <item>音频聊天</item>
+        <item>视频聊天</item>
+        <item>落地通话</item>
+        <item>回拨通话</item>
+    </string-array>
+    <string-array name="Codec_call">
+        <item>Codec_iLBC</item>
+        <item>Codec_G729</item>
+        <item>Codec_PCMU</item>
+        <item>Codec_PCMA</item>
+        <item>Codec_H264</item>
+        <item>Codec_SILK8K</item>
+        <item>Codec_AMR</item>
+        <item>Codec_VP8</item>
+        <item>Codec_SILK16K</item>
+    </string-array>
+    <string-array name="take_chat_arr">
+        <item>拍照</item>
+        <item>录制小视频</item>
+    </string-array>
+    <string-array name="take_chat_fire_msg">
+        <item>拍照</item>
+        <item>选择相册</item>
+    </string-array>
+    <string-array name="meeting_control">
+        <item>IP加入会议</item>
+        <item>解散会议</item>
+        <item>管理会议</item>
+    </string-array>
+    <string-array name="create_group_type_code">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>50</item>
+    </string-array>
+
+    <string-array name="create_group_type_content">
+        <item>同学</item>
+        <item>朋友</item>
+        <item>同事</item>
+        <item>亲友</item>
+        <item>闺蜜</item>
+        <item>粉丝</item>
+        <item>基友</item>
+        <item>驴友</item>
+        <item>出国</item>
+        <item>家政</item>
+        <item>小区</item>
+        <item>比赛</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="change_voice_arr">
+        <item>原生</item>
+        <item>萝莉</item>
+        <item>大叔</item>
+        <item>惊悚</item>
+        <item>搞怪</item>
+        <item>空灵</item>
+
+    </string-array>
+</resources>

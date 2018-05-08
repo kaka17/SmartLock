@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@color/ViewBg"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/order_shop"
+            style="@style/MyOrdering_Shopping"
+            android:paddingLeft="15dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ordercare_and_oreder"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            ></View>
+        <TextView
+
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:text="  "
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_delete_all"
+            style="@style/MyOrdering_Shopping"
+            android:id="@+id/tv_Pop_Clear" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_Ordering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none" />
+
+
+
+</LinearLayout>

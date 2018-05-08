@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CCPListItem"
+    android:paddingLeft="@dimen/SmallPadding"
+    android:paddingRight="@dimen/SmallPadding">
+
+    <com.sht.smartlock.phone.ui.chatting.view.CCPMaskLayout
+        android:layout_width="@dimen/NormalAvatarWrapSize"
+        android:layout_height="@dimen/NormalAvatarWrapSize">
+
+        <ImageView
+            android:id="@id/content"
+            android:layout_width="@dimen/NormalAvatarSize"
+            android:layout_height="@dimen/NormalAvatarSize"
+            android:layout_centerVertical="true"/>
+    </com.sht.smartlock.phone.ui.chatting.view.CCPMaskLayout>
+
+    <com.sht.smartlock.phone.ui.chatting.base.EmojiconTextView
+        android:id="@+id/at_someone_item_nick"
+        style="@style/CCPFontTitleInList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/SmallerPadding"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:text="{nick}" />
+</LinearLayout>

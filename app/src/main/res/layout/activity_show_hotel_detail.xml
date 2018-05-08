@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.booking.ShowHotelDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/goBack"
+            style="@style/goback"
+            android:background="@drawable/common_tab_bg"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            style="@style/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hotel_detail" />
+
+        <ImageView
+            android:id="@+id/collect"
+            style="@style/toolbar_click"
+            android:layout_toLeftOf="@+id/share"
+            android:background="@drawable/common_tab_bg"
+            android:src="@drawable/un_collect" />
+
+        <ImageView
+            android:id="@+id/share"
+            style="@style/toolbar_click"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_tab_bg"
+
+            android:src="@drawable/share" />
+    </RelativeLayout>
+
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.handmark.pulltorefresh.library.PullToRefreshWebView
+        android:id="@+id/wvHotelDetail"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_weight="1"
+        >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshWebView>
+
+    <RelativeLayout
+
+
+        android:id="@+id/lyBookingNow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/bookingNow"
+            android:src="@drawable/shopping_car" />
+
+        <TextView
+            android:id="@+id/bookingNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:text="@string/booking_now"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

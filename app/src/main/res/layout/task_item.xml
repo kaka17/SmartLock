@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tvServicer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务："
+            android:textColor="@color/TextBlack087"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            />
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_toRightOf="@+id/tvServicer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/TextBlack087"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="4"
+            android:paddingRight="16dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linVoic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        >
+    <ImageView
+        android:id="@+id/ivVoic"
+        style="@style/chat_content_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chatfrom_voice_playing"
+        android:background="@drawable/chatfrom_bg"
+        />
+        <TextView
+            android:id="@+id/tvVoiceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5s"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/TextBlack054"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/TextBlack087"
+        android:text="任务进度:"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        />
+        <com.sht.smartlock.ui.activity.myview.MyListView
+            android:id="@+id/myLvTask"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="10dp"
+            android:divider="@null"
+            android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:id="@+id/relComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            >
+        <ImageView
+            android:id="@+id/ivComplete"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/pic_dot_green"
+            android:layout_marginLeft="44dp"
+
+
+            />
+        <TextView
+            android:id="@+id/tvComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已完成"
+            android:layout_toRightOf="@+id/ivComplete"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/TaskIsIng"
+            />
+        <TextView
+            android:id="@+id/tvCompleteTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30   2017/03/09"
+            android:layout_toRightOf="@+id/tvComplete"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/TextBlack054"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/TaskLine"
+            android:layout_below="@+id/ivComplete"
+            android:layout_marginLeft="52dp"
+            />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relComplete"
+            android:visibility="visible"
+            >
+
+
+        <ImageView
+            android:id="@+id/ivReceive"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/pic_dot_gray"
+            android:layout_marginLeft="44dp"
+
+
+            />
+        <TextView
+            android:id="@+id/tvReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已接受"
+            android:layout_toRightOf="@+id/ivReceive"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/TextBlack087"
+
+            />
+        <TextView
+            android:id="@+id/tvServiceror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务员：王小二 "
+            android:layout_toRightOf="@+id/ivReceive"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/tvReceive"
+            android:textColor="@color/TextBlack054"
+            />
+        <TextView
+            android:id="@+id/tvReceiveTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30   2017/03/09"
+            android:layout_toRightOf="@+id/tvReceive"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/TextBlack054"
+            />
+
+        <View
+            android:id="@+id/viewLine02"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:background="@color/TaskLine"
+            android:layout_below="@+id/ivReceive"
+            android:layout_marginLeft="52dp"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relReceive"
+            android:paddingBottom="6dp"
+            >
+
+
+        <ImageView
+            android:id="@+id/ivRelease"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/pic_dot_gray"
+            android:layout_marginLeft="44dp"
+
+
+            />
+        <TextView
+            android:id="@+id/tvRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已发布"
+            android:layout_toRightOf="@+id/ivRelease"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/TextBlack087"
+            />
+        <TextView
+            android:id="@+id/tvReleaseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30   2017/03/09"
+            android:layout_toRightOf="@+id/tvRelease"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/TextBlack054"
+            />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_702"
+        />
+<RelativeLayout
+    android:id="@+id/relBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="12dp"
+    android:background="@color/ViewBg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+
+        >
+
+    <TextView
+        android:id="@+id/tvCacelTask"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="取消任务"
+        android:textColor="@color/TextBlack087"
+        android:background="@drawable/pic_btn_frame"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_toLeftOf="@+id/tvTakeTask"
+        android:layout_marginRight="12dp"
+        />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTakeTask"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="对话记录"
+            android:textColor="@color/TextBlack087"
+            android:background="@drawable/pic_btn_frame"
+            android:gravity="center"
+            android:padding="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            />
+            <TextView
+                android:id="@+id/tvMsgInfo"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/pic_tips_message"
+                android:layout_marginLeft="60dp"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+    <TextView
+        android:id="@+id/tvTakeAgain"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="重新发布"
+        android:textColor="@color/TextBlack087"
+        android:background="@drawable/pic_btn_frame"
+        android:gravity="center"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:layout_marginRight="16dp"
+        />
+    </LinearLayout>
+</RelativeLayout>
+
+
+</LinearLayout>

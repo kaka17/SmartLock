@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage"
+    android:orientation="vertical" >
+    
+     <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/setup_connect"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/setup_connect"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true" />
+     <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/setup_connect_port"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/setup_connect_port"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true" />
+     <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/setup_lvs"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/setup_lvs"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true" />
+     <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/setup_lvs_port"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/setup_lvs_port"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true" />
+     <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/setup_fileserver"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/setup_File"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true" />
+     <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/setup_fileserver_port"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/setup_File_port"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true" />
+     <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/setup_appid"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/setup_appid"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true" />
+     <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/setup_apptoken"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/setup_apptoken"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true" />
+    
+
+</LinearLayout>

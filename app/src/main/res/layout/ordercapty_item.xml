@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCapety"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/LOCKHourText"
+        android:gravity="center_vertical"
+        android:text="包子早"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvNums"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="@drawable/bgnumber"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            />
+        </LinearLayout>
+</FrameLayout>

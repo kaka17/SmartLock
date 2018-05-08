@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="66dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/transparent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_below="@+id/ivDivider"
+        android:layout_width="fill_parent"
+        android:background="@color/transparent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="fill_parent"
+            android:background="@color/MainBottomBg"
+            android:layout_marginTop="16dp"
+            android:layout_height="match_parent"/>
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/id_tab_bottom_booking"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            app:layout_marginLeftPercent="6%w"
+            android:layout_marginTop="16dp"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_tab_bottom_booking"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="#0000"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/btn_opendoor_choosed"></ImageButton>
+
+            <TextView
+                android:id="@+id/tv_tab_bottom_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_selected"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                android:text="@string/openDoor" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <ImageView
+            android:id="@+id/ivDivider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/short_line"
+            android:layout_marginTop="16dp"
+            ></ImageView>
+        <LinearLayout
+            android:id="@+id/id_tab_bottom_index"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                >
+            <ImageButton
+                android:id="@+id/btn_tab_bottom_index"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="#0000"
+                android:clickable="false"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_services_n" />
+                <ImageView
+                    android:id="@+id/ivServiceMsg"
+                    android:visibility="gone"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="2dp"
+                    android:src="@drawable/pic_tips_message"
+                   android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_tab_bottom_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:text="@string/ServiceLock" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_bottom_mine"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            app:layout_marginRightPercent="6%w"
+            android:layout_marginTop="16dp"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_tab_bottom_mine"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="#0000"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/btn_hotel"></ImageButton>
+
+            <TextView
+                android:id="@+id/tv_tab_bottom_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                android:text="@string/tab_booking" />
+        </LinearLayout>
+
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whilebywhile"
+        android:id="@+id/relGuiServicer"
+        android:visibility="gone"
+        android:clickable="false"
+        >
+
+        <ImageView
+            android:id="@+id/ivWord09"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/pic_services"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentFrameLayout>

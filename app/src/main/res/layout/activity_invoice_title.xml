@@ -1,0 +1,72 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relatEditUser"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/btn_btncancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            />
+
+        <TextView
+            android:id="@+id/tvBtnTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="@string/mation_titleCode"
+            />
+
+        <Button
+            android:id="@+id/btnPanelSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mation_preservation"
+            android:textSize="20dp"
+            android:background="@null"
+            android:textColor="#ffffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="2%"
+        android:background="@color/light_gray"
+        android:layout_below="@+id/relatEditUser"
+        />
+
+    <EditText
+        android:id="@+id/editInvoiceTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="35%"
+        android:paddingLeft="20dp"
+        android:gravity="top"
+        android:background="@null"
+        android:hint="@string/mation_editInvoiceTitle"
+        android:layout_below="@+id/viewLine"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="1%"
+        android:layout_below="@+id/editInvoiceTitle"
+        android:background="@color/light_gray" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

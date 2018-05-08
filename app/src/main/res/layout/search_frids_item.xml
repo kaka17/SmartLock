@@ -1,0 +1,47 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true">
+
+        <com.sht.smartlock.ui.activity.myview.CircleImageView
+            android:id="@+id/search_frineds_head"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/centerhead"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvSearchFrinds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/search_frineds_head"
+            android:text="我是帅哥"/>
+
+
+        <ImageView
+            android:id="@+id/igButtonAddFrinds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_search_frinds"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

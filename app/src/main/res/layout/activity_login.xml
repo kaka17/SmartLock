@@ -1,0 +1,139 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/relateInclue"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:layout_centerHorizontal="true"
+        style="@style/MainTabBg"
+        >
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            android:background="@drawable/common_tab_bg"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="@string/mation_titleCode"
+            />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+<Button
+    android:id="@+id/btnDire"
+    android:text="direct"
+    android:layout_below="@+id/login_image_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"/>
+    <com.sht.smartlock.ui.activity.myview.CircleImageView
+    android:id="@+id/login_image_logo"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:clickable="true"
+    android:src="@drawable/logo"
+    android:scaleType="centerCrop"
+    android:layout_gravity="center_horizontal"
+    android:layout_below="@+id/relateInclue"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/login_linear_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="15%"
+        android:layout_below="@+id/login_image_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_username"
+            android:paddingLeft="10dp"
+            app:layout_heightPercent="15%w"
+            android:drawableLeft="@drawable/imageuserhead"
+            android:hint="@string/login_edit_username"
+            android:drawablePadding="10dp"
+            android:maxLines="1"
+            />
+
+
+
+        <EditText
+            android:id="@+id/edit_userpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            app:layout_heightPercent="15%w"
+            android:background="@drawable/image_password"
+            android:paddingLeft="10dp"
+            android:hint="@string/login_edit_userpwd"
+            android:layout_below="@+id/edit_username"
+            android:drawableLeft="@drawable/imageuserpass"
+            android:drawablePadding="10dp"
+            android:maxLines="1"/>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_edit_userlogin"
+        android:layout_marginTop="20dp"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="10%w"
+        android:textColor="@color/white"
+        android:background="@drawable/loginbtnstyle"
+        android:layout_below="@+id/login_linear_data"
+        android:layout_centerHorizontal="true" />
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/btn_login"
+    android:layout_width="300dp"
+    app:layout_widthPercent="80%"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_edit_userregist"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/registerbtnstyle"
+       android:layout_alignParentLeft="true"
+       />
+
+    <Button
+        android:id="@+id/btn_gorgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn_forgetpassword"
+        android:background="@drawable/registerbtnstyle"
+        android:layout_alignTop="@+id/btn_regist"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

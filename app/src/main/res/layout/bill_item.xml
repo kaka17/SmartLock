@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="20%w"
+        >
+        <LinearLayout
+            android:id="@+id/linBillItem"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="50%w"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBillPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:textSize="30sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/BiLLTextColor"
+                android:text="1200"/>
+
+            <TextView
+                android:id="@+id/tvBillHotelName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/LOCKHourText"
+                android:text="格林豪泰东门商务酒店"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linBillItemLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_widthPercent="40%w"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/linBillItem">
+
+            <TextView
+                android:id="@+id/tvBillState"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="23dp"
+                android:gravity="center"
+                android:textColor="@color/bill_item_color"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tvBillTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:textSize="16dp"
+                android:text="1200"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            app:layout_widthPercent="10%w"
+            android:layout_toRightOf="@+id/linBillItemLocal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/pic_forward"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="96%w"
+            app:layout_heightPercent="1%w"
+            android:layout_below="@+id/linBillItemLocal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.BusinessCentreActivity">
+
+    <include layout="@layout/title_panel"
+        android:id="@+id/include" />
+
+    <TextView
+        android:id="@+id/tvTextInfoTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="10dp"
+        android:text="@string/business_centre_title"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTextInfoTitle"
+        android:text="@string/business_centre_info"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.cloopen.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="2.0dip"
+    android:paddingTop="3.0dip" >
+
+    <TextView
+        android:id="@+id/popup_text"
+        style="@style/CCPLineActionButton"
+        android:background="@null"
+        android:gravity="center"
+        android:maxLines="3"
+        android:minHeight="45.0dip"
+        android:shadowColor="#ff000000"
+        android:shadowDx="1.2"
+        android:shadowDy="1.2"
+        android:shadowRadius="1.0"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="16.0dip" />
+
+</LinearLayout>

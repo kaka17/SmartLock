@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:id="@+id/ivPic"
+
+        android:layout_marginRight="5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRoomCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textColor="@color/text_font"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:lines="2"
+            android:ellipsize="end"
+            android:padding="1dp"
+            android:textSize="12sp"
+            android:id="@+id/tvBrief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRoomCaption"
+            android:text="123"
+            android:textColor="@color/text_hint" />
+
+        <TextView
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:id="@+id/tvFacility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="456"
+            android:textColor="@color/text_hint" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvOrderRoom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currency_sign"
+                android:textColor="@color/room_price" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="199"
+                android:textColor="@color/room_price"
+                android:textSize="22sp" />
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tvHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/4h"
+                android:textColor="@color/room_price"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tvOrderRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/order_room_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

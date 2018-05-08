@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+            <VideoView
+                android:id="@+id/surface_video_record"
+                android:layout_width="250dip"
+                android:layout_height="200dip" />
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="250dip"
+                android:layout_height="200dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+		<Button
+        android:id="@+id/switch_btn"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_gravity="right|top"
+        android:background="@drawable/btn_camera_switching" />
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_play_big"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="取消"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+           android:background="@drawable/start_intercom_normal"
+            android:textColor="#ff0000"
+            android:text="开始拍摄" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff0000"
+            android:visibility="gone" 
+           android:background="@drawable/start_intercom_pressed"
+            android:text="停止拍摄"
+            />
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff0000"
+           android:background="@drawable/start_intercom_normal"
+             android:visibility="gone" 
+            android:text="重拍"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="播放视频"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    style="@style/ChattingUIContent"
+    android:layout_below="@+id/chatting_time_tv" >
+
+    <include layout="@layout/chatting_item_avatar_from" />
+
+    <RelativeLayout
+        android:layout_width="130dip"
+        android:layout_height="160dip"
+        android:clickable="true"
+        android:id="@+id/re_location"
+        android:maxWidth="180dip"
+        android:maxHeight="210dip"
+        android:background="@drawable/chatview_location_map"
+         >
+
+        <TextView
+            android:id="@+id/chatting_user_tv"
+            style="@style/ChattingUISenderText"
+            android:visibility="gone" />
+
+        <!--&lt;!&ndash;<com.sht.smartlock.phone.ui.chatting.base.EmojiconTextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_location"&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/ChattingUIText"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/white"&ndash;&gt;-->
+            <!--&lt;!&ndash;emojicon:emojiconSize="@dimen/text_list_title"&ndash;&gt;-->
+             <!--/>-->
+
+        <com.sht.smartlock.phone.ui.chatting.base.EmojiconTextView
+        android:id="@+id/tv_location"
+        style="@style/ChattingUIText"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

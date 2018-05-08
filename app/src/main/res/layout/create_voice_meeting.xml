@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:form="http://schemas.android.com/apk/res-auto"
+    xmlns:spinnerView="http://schemas.android.com/apk/res-auto"
+    style="@style/CCPScroll"
+    android:background="@color/navpage"
+    android:scrollbars="none">
+
+    <LinearLayout
+        style="@style/CCPBody"
+        android:paddingTop="10.0dip">
+
+        <!--<com.sht.smartlock.phone.common.base.CCPFormInputView-->
+            <!--android:id="@+id/meeting_name"-->
+            <!--style="@style/CCPFormInputView"-->
+            <!--form:form_hint="@string/str_chatroom_name_input_hit"-->
+            <!--form:form_layout="@layout/ccp_form_input_clear_et_view"-->
+            <!--form:form_title="@string/str_chatroom_name" />-->
+
+        <!--<com.sht.smartlock.phone.common.base.CCPFormInputView-->
+            <!--android:id="@+id/meeting_pass"-->
+            <!--style="@style/CCPFormInputView"-->
+            <!--form:form_hint="@string/str_chatroom_pwd_input_hit"-->
+            <!--form:form_layout="@layout/ccp_form_input_clear_et_view"-->
+            <!--form:form_title="@string/str_chatroom_pwd" />-->
+
+        <com.sht.smartlock.phone.common.base.CCPFormInputView
+            android:id="@+id/meeting_name"
+            style="@style/CCPFormInputView" />
+
+        <com.sht.smartlock.phone.common.base.CCPFormInputView
+            android:id="@+id/meeting_pass"
+            style="@style/CCPFormInputView" />
+
+
+        <CheckedTextView
+            android:id="@+id/auto_close"
+            style="@style/CheckboxStyle"
+            android:checked="true"
+            android:text="@string/tip_autoclose" />
+
+        <CheckedTextView
+            android:id="@+id/auto_join"
+            style="@style/CheckboxStyle"
+            android:checked="true"
+            android:text="@string/tip_autojoin"/>
+        <CheckedTextView
+            android:id="@+id/auto_del"
+            style="@style/CheckboxStyle"
+            android:text="@string/tip_auto_del"/>
+
+        <!--<com.sht.smartlock.phone.common.base.SpinnerSelectView-->
+            <!--android:id="@+id/spinner_room_type"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:text="@string/str_room_tyep_spinner"-->
+            <!--android:textSize="@dimen/TitleTextSize"-->
+            <!--spinnerView:Spinner_DropDownTitle="@string/str_room_tyep_spinner"-->
+            <!--android:visibility="gone"-->
+            <!--spinnerView:Spinner_item="@array/meeting_type" />-->
+
+        <!--<com.sht.smartlock.phone.common.base.SpinnerSelectView-->
+            <!--android:id="@+id/spinner_tone_type"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:text="@string/str_tone_tyep_spinner"-->
+            <!--android:textSize="@dimen/TitleTextSize"-->
+            <!--spinnerView:Spinner_DropDownTitle="@string/str_tone_tyep_spinner"-->
+            <!--spinnerView:Spinner_item="@array/meeting_tone_type" />-->
+
+        <com.sht.smartlock.phone.common.base.SpinnerSelectView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/str_room_tyep_spinner"
+            android:textSize="@dimen/TitleTextSize"
+            android:visibility="gone"/>
+
+        <com.sht.smartlock.phone.common.base.SpinnerSelectView
+            android:id="@+id/spinner_tone_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/str_tone_tyep_spinner"
+            android:textSize="@dimen/TitleTextSize" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lin_Pop"
+
+    >
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        app:layout_widthPercent="100%w"
+        android:popupBackground="#00ffffff"
+        />
+    <ListView
+        android:id="@+id/lv_Popwindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="100%w"
+        android:divider="#00ffffff"
+        android:dividerHeight="1px"
+        android:popupBackground="#66000000"
+        android:background="#44000000"
+        >
+    </ListView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

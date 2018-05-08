@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivPicture"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/pic_hotel"
+            android:scaleType="fitXY"
+
+            />
+
+    </RelativeLayout>
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvCaption"
+                android:textColor="@color/text_font"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:text="维也纳"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/pic_comment"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    ></ImageView>
+                <TextView
+                    android:id="@+id/tvComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3人点评"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:textColor="#727375"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivComments"
+                    />
+                <ImageView
+                    android:id="@+id/ivDiscout"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/pic_mark_discout"
+                    android:layout_toRightOf="@+id/tvComments"
+                    />
+                <ImageView
+                    android:id="@+id/ivIsCoupons"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/pic_mark_coupons"
+                    android:layout_toRightOf="@+id/ivDiscout"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivPrice"
+                    android:layout_width="10dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/submenu"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    ></ImageView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:text="附近"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="44"
+                    android:textSize="24sp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/LOCKMANEYCOLOCK"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ivPrice"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:text="元起"
+                    android:textColor="@color/LOCKGRAYCOLOCK"/>
+            </LinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <ImageView
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        style="@style/long_line"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="12dp"
+        ></ImageView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

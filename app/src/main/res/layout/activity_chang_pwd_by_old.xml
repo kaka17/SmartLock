@@ -1,0 +1,95 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.sht.smartlock.ui.activity.ChangPwdByOldActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            />
+
+        <TextView
+            android:id="@+id/tvBtnTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="重设密码"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editOldPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="原密码"
+        android:password="true"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_widthPercent="90%"
+        android:background="@drawable/editcenter"
+        android:layout_gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/etNewChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="新密码"
+        android:password="true"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_widthPercent="90%"
+        android:digits="@string/register_name_digits"
+        android:background="@drawable/editcenter"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/etARepeatChangeNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="再次确认密码"
+        android:digits="@string/register_name_digits"
+        android:password="true"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_widthPercent="90%"
+
+        android:background="@drawable/editcenter"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvForgetPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="忘记旧密码?"
+        android:gravity="end"
+        android:layout_marginTop="12dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/MAINBGTAB"
+        />
+
+    <Button
+        android:id="@+id/btnPasswordSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认提交"
+        android:layout_marginTop="20dp"
+        app:layout_widthPercent="90%"
+        android:textColor="@color/white"
+        android:background="@color/btn_login_normal"
+        android:layout_gravity="center_horizontal"
+        />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

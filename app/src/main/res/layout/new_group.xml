@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CCPScroll"
+    android:background="@color/navpage"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/CCPBody"
+        android:paddingTop="10.0dip" >
+
+        <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/group_name"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/str_group_name_hint"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="false" >
+
+            <requestFocus />
+        </com.sht.smartlock.phone.common.base.CCPClearEditText>
+
+        <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/group_notice"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/str_group_notice_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+        <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/group_provice"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/str_group_notice_provice"
+            android:maxLength="30"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+        <com.sht.smartlock.phone.common.base.CCPClearEditText
+            android:id="@+id/group_city"
+            android:maxLength="30"
+            style="@style/CCPLineEditText"
+            android:layout_marginTop="@dimen/NormalPadding"
+            android:background="@drawable/edittext_bg_selector"
+            android:hint="@string/str_group_notice_city"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+        <Spinner
+            android:id="@+id/str_group_permission_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_marginTop="10.0dip"
+            android:visibility="gone"
+            android:prompt="@string/str_group_permission_spinner" />
+       
+        
+        
+        <Button
+            android:id="@+id/str_group_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/str_group_permission_type"
+            android:textSize="@dimen/TitleTextSize" />
+
+        <Button
+            android:id="@+id/str_group_permission_spinner2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/str_group_permission_spinner"
+            android:textSize="@dimen/TitleTextSize" />
+        <Button
+            android:id="@+id/create"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            style="@style/CCPBigRedButton"
+            android:text="@string/app_button_create"
+            android:textSize="@dimen/TitleTextSize" />
+    </LinearLayout>
+
+</ScrollView>

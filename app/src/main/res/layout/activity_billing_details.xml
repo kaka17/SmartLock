@@ -1,0 +1,396 @@
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relBillDetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:background="@drawable/common_tab_bg" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/myTitleBillDetail" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vLineBill1Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="2%w"
+        android:background="@color/bg_touch"
+        android:layout_below="@+id/relBillDetail"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="20%"
+        android:layout_below="@+id/vLineBill1Detail"
+        android:orientation="vertical"
+        android:id="@+id/linTopBillDetail">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="15sp"
+            app:layout_marginBottomPercent="4%"
+            app:layout_marginTopPercent="4%"
+            app:layout_textSizePercent="4%w"
+            app:layout_heightPercent="16%"
+            android:text="消费金额:"/>
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:layout_textSizePercent="5%w"
+            android:textColor="@color/BiLLTextColor"
+            android:text="18"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/short_line"
+            android:layout_marginTop="3dp"
+            app:layout_widthPercent="95%w"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_marginTopPercent="5%"
+            >
+
+            <TextView
+                android:id="@+id/tvBillHotelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                app:layout_textSizePercent="4%w"
+                android:text="八号当铺"/>
+
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            app:layout_marginTopPercent="5%"
+            >
+
+            <TextView
+                android:id="@+id/tvBillHotelNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                app:layout_textSizePercent="4%w"
+                android:text="房号:"/>
+
+            <TextView
+                android:id="@+id/tvBillRoomNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvBillHotelNum"
+                android:textSize="15sp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tvBillTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                app:layout_textSizePercent="4%w"
+                android:text="aa"/>
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:id="@+id/vLineBill1Detail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="2%w"
+        android:background="@color/bg_touch"
+        android:layout_below="@+id/linTopBillDetail"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="62%w"
+        android:orientation="vertical"
+        android:id="@+id/linConsumerItem"
+        android:layout_below="@+id/vLineBill1Detail1">
+
+    <TextView
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:layout_paddingPercent="2%"
+    android:text="消费项目:"/>
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+            <ImageView
+                android:id="@+id/ivRoomCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_heightPercent="27%"
+                app:layout_widthPercent="27%"
+                android:src="@drawable/btn_cost_house"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    app:layout_marginTopPercent="2%"
+                    app:layout_textSizePercent="6.5%"
+                    android:text="房费"/>
+                <TextView
+                    android:id="@+id/tvRoomTotal"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    app:layout_marginTopPercent="2%"
+                    app:layout_textSizePercent="6.5%"
+                    android:textColor="@color/BiLLTextColor"
+                    android:text=""/>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+            <ImageView
+                android:id="@+id/ivOdering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_heightPercent="27%"
+                app:layout_widthPercent="27%"
+                android:src="@drawable/btn_cost_diner_tarch"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    app:layout_marginTopPercent="2%"
+                    app:layout_textSizePercent="6.5%"
+                    android:text="订餐"/>
+                <TextView
+                    android:id="@+id/tvOrderingTotal"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    app:layout_marginTopPercent="2%"
+                    app:layout_textSizePercent="6.5%"
+                    android:textColor="@color/BiLLTextColor"
+                    android:text=""/>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+            <ImageView
+                android:id="@+id/ivShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_heightPercent="48%"
+                app:layout_widthPercent="28%"
+                android:src="@drawable/btn_cost_shopping_tarch"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    app:layout_marginTopPercent="4%"
+                    app:layout_textSizePercent="12%"
+                    android:text="购物"/>
+
+                <TextView
+                    android:id="@+id/tvShoppingTotal"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/BiLLTextColor"
+                    app:layout_marginTopPercent="4%"
+                    app:layout_textSizePercent="12%"
+                    android:text=""/>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+            <ImageView
+                android:id="@+id/ivOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_heightPercent="48%"
+                app:layout_widthPercent="28%"
+                android:src="@drawable/icon_cost_product_tarch"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    app:layout_marginTopPercent="4%"
+                    app:layout_textSizePercent="12%"
+                    android:text="其他"/>
+                <TextView
+                    android:id="@+id/tvOtherToatal"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    app:layout_marginTopPercent="4%"
+                    app:layout_textSizePercent="12%"
+                    android:textColor="@color/BiLLTextColor"
+                    android:text=""/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:id="@+id/vLineBill1Detail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="3%w"
+        android:background="@color/bg_touch"
+        android:layout_below="@+id/linConsumerItem"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/linDetailed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/vLineBill1Detail2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消费明细:"/>
+
+        <TextView
+            android:id="@+id/tvShowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="30dp"
+            android:layout_weight="1"
+            android:text="房费"/>
+
+        <ImageView
+            android:id="@+id/ivFold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/safari_up"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/short_line"
+        android:layout_below="@+id/linDetailed"
+        android:layout_marginTop="5dp"
+        app:layout_widthPercent="95%w"/>
+
+    <ListView
+        android:id="@+id/lvlinDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:layout_below="@+id/ivLine"/>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

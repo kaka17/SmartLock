@@ -1,0 +1,76 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    >
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:background="@drawable/common_tab_bg"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:onClick="onBack"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="注册" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_marginTopPercent="6.5%h"
+        android:src="@drawable/icon_login"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivGoToRegisger"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:src="@drawable/getusename"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        app:layout_marginTopPercent="11%h"
+        />
+    <ImageView
+        android:id="@+id/ivGoToLogin"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:src="@drawable/gotologin"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivGoToScan"
+        android:layout_width="71dp"
+        android:layout_height="85dp"
+        android:src="@drawable/btn_scan"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_marginBottomPercent="30%h"
+
+
+        />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

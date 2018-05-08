@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ecdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/NavPage"
+    
+    android:orientation="vertical" >
+    
+    
+     <!--<com.sht.smartlock.phone.common.view.SettingItem-->
+            <!--android:id="@+id/group_card_id"-->
+            <!--style="@style/settings_item_layout_single"-->
+            <!--android:layout_marginTop="@dimen/NormalPadding"-->
+            <!--ecdemo:item_showDivider="true"-->
+            <!--android:clickable="false"-->
+            <!--ecdemo:item_titleText="@string/group_card_id" />-->
+     <!-- -->
+      <!--<com.sht.smartlock.phone.common.view.SettingItem-->
+            <!--android:id="@+id/group_card_userid"-->
+            <!--style="@style/settings_item_layout_single"-->
+            <!--android:layout_marginTop="@dimen/NormalPadding"-->
+            <!--ecdemo:item_showDivider="true"-->
+            <!--android:clickable="false"-->
+            <!--ecdemo:item_titleText="@string/group_card_userid" />-->
+      <!-- -->
+      <!-- -->
+      <!--<com.sht.smartlock.phone.common.view.SettingItem-->
+            <!--android:id="@+id/group_card_gender"-->
+            <!--android:clickable="false"-->
+            <!--style="@style/settings_item_layout_single"-->
+            <!--android:layout_marginTop="@dimen/NormalPadding"-->
+            <!--ecdemo:item_showDivider="true"-->
+            <!--ecdemo:item_titleText="@string/group_card_gender" />-->
+       <!--<com.sht.smartlock.phone.common.view.SettingItem-->
+            <!--android:id="@+id/group_card_nickname"-->
+            <!--style="@style/settings_item_layout_single"-->
+            <!--android:layout_marginTop="@dimen/NormalPadding"-->
+            <!--ecdemo:item_showDivider="true"-->
+            <!--ecdemo:item_titleText="@string/group_card_name" />-->
+        <!--<com.sht.smartlock.phone.common.view.SettingItem-->
+            <!--android:id="@+id/group_card_tel"-->
+            <!--style="@style/settings_item_layout_single"-->
+            <!--android:layout_marginTop="@dimen/NormalPadding"-->
+            <!--ecdemo:item_showDivider="true"-->
+            <!--ecdemo:item_titleText="@string/group_card_tel" />-->
+         <!--<com.sht.smartlock.phone.common.view.SettingItem-->
+            <!--android:id="@+id/group_card_email"-->
+            <!--style="@style/settings_item_layout_single"-->
+            <!--android:layout_marginTop="@dimen/NormalPadding"-->
+            <!--ecdemo:item_showDivider="true"-->
+            <!--ecdemo:item_titleText="@string/group_card_email" />-->
+          <!--<com.sht.smartlock.phone.common.view.SettingItem-->
+            <!--android:id="@+id/group_card_remark"-->
+            <!--style="@style/settings_item_layout_single"-->
+            <!--android:layout_marginTop="@dimen/NormalPadding"-->
+            <!--ecdemo:item_showDivider="true"-->
+            <!--ecdemo:item_titleText="@string/group_card_remark" />-->
+
+    <com.sht.smartlock.phone.common.view.SettingItem
+        android:id="@+id/group_card_id"
+        style="@style/settings_item_layout_single"
+        android:layout_marginTop="@dimen/NormalPadding"
+        android:clickable="false"/>
+
+    <com.sht.smartlock.phone.common.view.SettingItem
+        android:id="@+id/group_card_userid"
+        style="@style/settings_item_layout_single"
+        android:layout_marginTop="@dimen/NormalPadding"
+        android:clickable="false" />
+
+
+    <com.sht.smartlock.phone.common.view.SettingItem
+        android:id="@+id/group_card_gender"
+        android:clickable="false"
+        style="@style/settings_item_layout_single"
+        android:layout_marginTop="@dimen/NormalPadding"/>
+    <com.sht.smartlock.phone.common.view.SettingItem
+        android:id="@+id/group_card_nickname"
+        style="@style/settings_item_layout_single"
+        android:layout_marginTop="@dimen/NormalPadding" />
+    <com.sht.smartlock.phone.common.view.SettingItem
+        android:id="@+id/group_card_tel"
+        style="@style/settings_item_layout_single"
+        android:layout_marginTop="@dimen/NormalPadding" />
+    <com.sht.smartlock.phone.common.view.SettingItem
+        android:id="@+id/group_card_email"
+        style="@style/settings_item_layout_single"
+        android:layout_marginTop="@dimen/NormalPadding" />
+    <com.sht.smartlock.phone.common.view.SettingItem
+        android:id="@+id/group_card_remark"
+        style="@style/settings_item_layout_single"
+        android:layout_marginTop="@dimen/NormalPadding"/>
+
+</LinearLayout>

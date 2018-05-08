@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:layout_height="fill_parent" >
+
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_below="@+id/myrelat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reBottom"
+        android:layout_gravity="center" />
+
+    <com.sht.smartlock.zxing.views.ViewfinderView
+        android:id="@+id/viewfinderview"
+        android:layout_below="@+id/myrelat"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/reBottom"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:background="@color/BANTOUMINGSE" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:background="@drawable/common_tab_bg"
+            android:src="@drawable/buttoncancle"
+            style="@style/goback"
+            android:onClick="onBack"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="注册" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reBottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/BANTOUMINGSE"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Scan Barcode"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_scan"
+            android:layout_centerInParent="true"
+            />
+        
+    </RelativeLayout>
+
+</FrameLayout>

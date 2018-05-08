@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+   
+            <Chronometer
+                android:id="@+id/chronometer_biansheng"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                 android:gravity="center"
+                 android:textColor="@color/green"
+                 android:textSize="@dimen/BigTextSize"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/voice_record_imgbtn_biansheng"
+                android:layout_width="wrap_content"
+                android:focusableInTouchMode="true"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/voicechange_biansheng" />
+            
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="变声"
+                />
+
+           
+            
+            
+    
+
+</LinearLayout>

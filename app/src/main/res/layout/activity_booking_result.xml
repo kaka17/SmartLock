@@ -1,0 +1,241 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.booking.BookingResultActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:background="@drawable/common_tab_bg"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/order_success" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/ORderTepy"
+        />
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:drawableLeft="@drawable/iocn_choosed_book"
+            android:drawableStart="@drawable/iocn_choosed_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:drawablePadding="8dp"
+            android:text="@string/room_order_success"
+            android:textSize="19sp"
+            app:layout_textSizePercent="5%"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line_702"
+            app:layout_widthPercent="100%w"></ImageView>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:layout_marginPercent="1%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:text="@string/hotel_caption" />
+
+                <TextView
+                    android:id="@+id/tvRoomCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:text="123456" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_marginPercent="1%">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:text="@string/type_and_count" />
+
+                <TextView
+                    android:id="@+id/tvRoomTypeAndCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:layout_marginLeft="9dp"
+                    android:text="123456" />
+            </LinearLayout>
+
+            <LinearLayout
+                app:layout_marginPercent="1%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:text="@string/stay_time" />
+
+                <TextView
+                    android:id="@+id/tvStayTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:text="123456" />
+            </LinearLayout>
+
+            <LinearLayout
+                app:layout_marginPercent="1%"
+                android:id="@+id/llAriveTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:text="@string/arrive_at_latest" />
+
+                <TextView
+                    android:id="@+id/tvArriveAtLatest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:layout_marginLeft="15dp"
+                    android:text="123456" />
+            </LinearLayout>
+
+            <LinearLayout
+                app:layout_marginPercent="1%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:text="@string/consumption_amount" />
+
+                <TextView
+                    android:id="@+id/tvConsumptionAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/LOCKHourText"
+                    android:text="123456" />
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/ORderTepy"
+        />
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:background="#ffffff"
+    android:layout_marginTop="20dp"
+    app:layout_marginTopPercent="1%"
+    android:paddingBottom="10dp"
+    app:layout_paddingBottomPercent="1%"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="在线支付房费，房号锁定且自助入住，无需前台登记"
+            android:textColor="@color/billRoomTex001" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPayNow"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bookingtopay"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+               />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btnPayLater"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/booknopay"
+               />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/ORderTepy"
+        />
+</com.zhy.android.percent.support.PercentLinearLayout>

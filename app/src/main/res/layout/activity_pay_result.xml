@@ -1,0 +1,197 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:background="@color/ORderTepy"
+    tools:context="com.sht.smartlock.ui.activity.booking.PayResultActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:background="@drawable/common_tab_bg" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/pay_bill" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/ORderTepy"
+        />
+    <com.zhy.android.percent.support.PercentLinearLayout
+        app:layout_marginTopPercent="1%"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvPayResult"
+            android:drawableLeft="@drawable/iocn_choosed_book"
+            android:drawableStart="@drawable/iocn_choosed_book"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/LOCKHourText"
+            android:drawablePadding="6dp"
+            android:text="@string/pay_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_702"
+            ></View>
+        <LinearLayout
+            android:padding="5dp"
+            app:layout_paddingPercent="1.5%"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="酒店名称："
+                android:gravity="right"
+                android:layout_width="150dp"
+                android:textColor="@color/LOCKHourText"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvHotelName"
+                android:layout_width="wrap_content"
+                android:textColor="@color/LOCKHourText"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            app:layout_paddingPercent="1.5%"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:text="房型/数量："
+                android:gravity="right"
+                android:layout_width="150dp"
+                android:textColor="@color/LOCKHourText"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRoomTypeAndCount"
+                android:layout_width="wrap_content"
+                android:textColor="@color/LOCKHourText"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_paddingPercent="1.5%"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="入离时间："
+                android:gravity="right"
+                android:layout_width="150dp"
+                android:textColor="@color/LOCKHourText"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvStayTime"
+                android:layout_width="wrap_content"
+                android:textColor="@color/LOCKHourText"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/ORderTepy"
+        />
+
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+    app:layout_marginTopPercent="1%"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        app:layout_paddingPercent="3%"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="right"
+            android:text="房间号码："
+            android:layout_width="150dp"
+            android:textColor="@color/LOCKHourText"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvCheckInRoomNumber"
+            android:layout_width="wrap_content"
+            android:textColor="@color/LOCKHourText"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/gray"
+        ></View>
+    <LinearLayout
+        app:layout_paddingPercent="3%"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="自助入住："
+            android:gravity="right"
+            android:layout_width="150dp"
+            android:textColor="@color/LOCKHourText"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvCheckingYouself"
+            android:layout_width="wrap_content"
+            android:textColor="@color/LOCKHourText"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gobackmain"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_widthPercent="85%w"/>
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,293 @@
+
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lin_opendoor_fragment"
+
+    >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/open_door"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/textView"
+        style="@style/WordsStyle"
+        app:layout_widthPercent="28%"
+        app:layout_textSizePercent="4%w"
+        />
+
+        <TextView
+            style="@style/WordsStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="维也纳酒店888号"
+            android:gravity="center"
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/tv_Lock" />
+
+
+        <TextView
+            android:id="@+id/tv_myLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_pressed"
+            android:layout_marginLeft="15dp"
+            android:text="@string/DoorRoom_Empty"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/sp_MyLockText"
+            app:layout_heightPercent="76%"
+            app:layout_marginBottomPercent="2%"
+            app:layout_marginRightPercent="2%w"
+            app:layout_widthPercent="64%"
+            app:layout_marginLeftPercent="1%"
+            app:layout_textSizePercent="5.3%w"
+            app:layout_marginTopPercent="2%"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:drawableRight="@drawable/sp_last"
+            android:drawableEnd="@drawable/sp_last"
+            android:paddingRight="10dp"
+            />
+
+        <ImageView
+            android:src="@drawable/ic_right_arrow"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/sp_last"
+            android:id="@+id/imageView_Go"
+            android:visibility="gone"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/OpenDoor"
+        app:layout_heightPercent="2%"
+        />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <com.zhy.android.percent.support.PercentFrameLayout
+            android:id="@+id/home_OpenDoor"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@color/white"
+            android:clickable="true"
+            app:layout_heightPercent="42%"
+            app:layout_widthPercent="42%"
+            >
+
+        <ImageView
+            android:id="@+id/iv_door"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/btn_opendoor"
+            android:paddingBottom="10dp"
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            app:layout_heightPercent="90%"
+            app:layout_widthPercent="97%"
+            />
+
+            <ImageView
+                android:id="@+id/iv_DoorCloseAndOpen"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:paddingBottom="15dp"
+                android:layout_marginTop="3dp"
+                app:layout_heightPercent="72%"
+                app:layout_widthPercent="92%"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                />
+
+
+        </com.zhy.android.percent.support.PercentFrameLayout>
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/lin_OpenDoor_recore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            app:layout_marginRightPercent="0.01%"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="30%"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/opendorr_record"
+                app:layout_heightPercent="30%"
+                app:layout_widthPercent="30%"
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/open_door_Record"
+            style="@style/WordsStyle"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="70%"
+             />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_door_Title"
+            android:id="@+id/tv_Door_tile"
+            android:layout_below="@+id/home_OpenDoor"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            style="@style/WordsStyle"
+            app:layout_heightPercent="8%"
+            app:layout_textSizePercent="6%"
+            app:layout_marginTopPercent="1%"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_door_State"
+            android:id="@+id/tv_DoorState"
+            android:layout_below="@+id/tv_Door_tile"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_textSizePercent="4%"
+            android:textColor="@color/close_door_ok"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+             />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/tv_DoorState"
+            android:layout_marginTop="15dp"
+            app:layout_marginTopPercent="1%"
+            android:background="@color/OpenDoor"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/OpenDoor"
+                app:layout_heightPercent="5%"
+                />
+            <com.zhy.android.percent.support.PercentLinearLayout
+
+                android:id="@+id/lin_Evevator"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/common_chenkin_bg"
+                    android:id="@+id/iv_Evevator"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="45%"
+                    android:scaleType="fitXY"
+                     />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/common_electric_bg"
+                    android:id="@+id/iv_Electric"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="45%"
+                    android:scaleType="fitXY"
+                    app:layout_marginLeftPercent="2.5%"
+                    />
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/OpenDoor"
+                app:layout_heightPercent="5%"
+                />
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/ivCheckin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mycheckin01"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="45%"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ivCheckout"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="45%"
+                    app:layout_marginLeftPercent="2.5%"
+                    android:src="@drawable/mycheckout01"
+                    android:scaleType="fitXY"
+                    />
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_heightPercent="5%"
+                />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

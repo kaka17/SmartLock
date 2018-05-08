@@ -1,0 +1,127 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_heightPercent="40%"
+    android:id="@+id/lin_opendoor_fragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/myOrderingName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/OrderGray"
+        android:text=""/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_heightPercent="8%w"
+        app:layout_marginTopPercent="1%w"
+        app:layout_marginBottomPercent="2%w"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvMyOrdering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/OrderGray"
+            android:text=""
+            android:paddingRight="6dp"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/tvTotal"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aa"
+            android:textColor="@color/LOCKPice"
+            android:layout_marginRight="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/rightarrow"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="8dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            >
+        <TextView
+            android:id="@+id/tvLocalPaymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/OrderGray"
+            android:textSize="12sp"
+            android:text="支付方式:" />
+
+        <TextView
+            android:id="@+id/tvPaymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:textColor="@color/OrderGray"
+            android:textSize="12sp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@+id/tvLocalPaymentMethod"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间日期"
+            android:textColor="@color/OrderGray"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_702"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="12dp"
+        />
+<!--
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="1dp"
+      android:background="@color/text_light"
+      app:layout_widthPercent="90%"
+      android:layout_gravity="center_horizontal"/>
+-->
+</com.zhy.android.percent.support.PercentLinearLayout>

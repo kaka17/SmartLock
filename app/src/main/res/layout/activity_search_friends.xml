@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/myrelat_search"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:onClick="onBack"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            />
+        <TextView
+            android:id="@+id/tv_Tile"
+            style="@style/words"
+            android:layout_gravity="center_vertical"
+            android:text="@string/search_friends" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/search_line1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/server_Empty"
+        android:layout_below="@+id/myrelat_search"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/View_line_friends"
+        android:layout_below="@+id/search_textView"
+        />
+    <com.sht.smartlock.widget.edittext.ClearEditText
+        android:id="@+id/editSearchFrids"
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/serch_frids_image"
+        android:paddingLeft="20dp"
+
+        android:singleLine="true"
+        android:hint="名称/号码"
+        android:layout_below="@+id/search_line1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/View_line_friends"
+        android:layout_below="@+id/search_textView"
+        />
+    <TextView
+        android:id="@+id/search_textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/server_Empty"
+        android:layout_below="@+id/editSearchFrids"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical"
+        android:text="新的朋友"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/View_line_friends"
+        android:layout_below="@+id/search_textView"
+        />
+    <ListView
+        android:id="@+id/listAddFrids"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_textView"/>
+    <ListView
+        android:id="@+id/listSearchFrids"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_textView"/>
+
+
+</LinearLayout>

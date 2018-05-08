@@ -1,0 +1,24 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lin_Pop"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text=""
+        android:gravity="center"
+        android:id="@+id/tv_Name"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:popupBackground="#00ffffff"
+        app:layout_textSizePercent="8%w"
+        app:layout_paddingRightPercent="10%w"
+        android:background="#40000000"
+        />
+</com.zhy.android.percent.support.PercentLinearLayout>

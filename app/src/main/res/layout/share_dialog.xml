@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#00ffffff"
+              android:orientation="vertical">
+
+    <GridView
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/share_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="1"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:verticalSpacing="1dp">
+    </GridView>
+
+
+    <RelativeLayout
+        android:id="@+id/share_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/share_cancle"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="取消"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

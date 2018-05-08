@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.sht.smartlock.ui.activity.MyLockGroupsActivity"
+    >
+    <RelativeLayout
+        android:id="@+id/myrelat"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:clickable="true"
+            android:src="@drawable/btn_back"
+            style="@style/goback"
+            android:onClick="onBack"
+            android:background="@drawable/common_tab_bg"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="聊天室" />
+
+        <ImageView
+            android:id="@+id/img_Search"
+            style="@style/Img_Search"
+            android:clickable="true"
+            android:src="@drawable/chat_search"
+            android:padding="18dp"
+            android:onClick="onBack"
+            android:background="@drawable/common_tab_bg"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/reEnpty"
+        android:layout_below="@+id/vLineBill1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:src="@drawable/pic_anime_failed"
+            />
+    </RelativeLayout>
+<com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+    android:id="@+id/pull_Expandable_lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+    >
+</com.handmark.pulltorefresh.library.PullToRefreshExpandableListView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    <TextView
+        android:paddingLeft="@dimen/activity_left"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:text="@string/MyLock"
+        style="@style/MyLock"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:scrollbars="none" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <TextView
+        android:paddingLeft="@dimen/activity_left"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Nearby_Lock"
+        style="@style/MyLock"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

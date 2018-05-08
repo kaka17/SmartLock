@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/CCPListItem">
+
+        <com.sht.smartlock.phone.ui.chatting.view.CCPMaskLayout
+            android:id="@+id/meeting_contact_item_avatar"
+            android:layout_width="@dimen/NormalAvatarWrapSize"
+            android:layout_height="@dimen/NormalAvatarWrapSize"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/SmallPadding"
+            android:layout_marginRight="@dimen/SmallPadding">
+
+            <ImageView
+                android:id="@+id/content"
+                android:layout_width="@dimen/NormalAvatarSize"
+                android:layout_height="@dimen/NormalAvatarSize"
+                android:layout_centerInParent="true" />
+        </com.sht.smartlock.phone.ui.chatting.view.CCPMaskLayout>
+
+        <RelativeLayout
+            android:id="@+id/meeting_contact_item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/SmallPadding">
+
+            <Button
+                android:id="@+id/chatroom_contact_mute_btn"
+                style="@style/CCPSmallGreyButton"
+                android:layout_marginRight="5.0dip"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/chatroom_permission_remove" />
+
+            <Button
+                android:id="@+id/chatroom_contact_kick_ok_btn"
+                style="@style/CCPSmallGreenButton"
+                android:layout_toRightOf="@+id/chatroom_contact_mute_btn"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/chatroom_permission_mute_revert" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/meeting_contact_item_state"
+            android:layout_toRightOf="@+id/meeting_contact_item_avatar"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/meeting_contact_item_nick_tv"
+                style="@style/CCPFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:text="{nick}" />
+
+            <TextView
+                android:id="@+id/meeting_contact_item_digest_tv"
+                style="@style/CCPFontTipInList"
+                android:layout_width="wrap_content"
+                android:layout_height="20.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/meeting_contact_item_nick_tv"
+                android:singleLine="true"
+                android:text="{permission}"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

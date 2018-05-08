@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sht.smartlock.phone.ui.meeting.VoiceMeetingCenter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/bottom_tips"
+    android:background="@drawable/animation_bg">
+    <LinearLayout
+        android:id="@+id/chatroom_center_status"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.0"
+        android:gravity="bottom"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/chatroom_voice_icon"
+        android:scaleType="fitXY" />
+</com.sht.smartlock.phone.ui.meeting.VoiceMeetingCenter>

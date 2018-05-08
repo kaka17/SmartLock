@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage" >
+
+    <ListView
+        android:id="@+id/meeting_member_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0.0px"
+        android:focusable="true"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:transcriptMode="disabled" />
+
+    <TextView
+        android:id="@+id/empty_tip_recommend_bind_tv"
+        style="@style/CCPBigGreyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/member_empty_meeting"
+        android:visibility="visible" />
+
+</FrameLayout>

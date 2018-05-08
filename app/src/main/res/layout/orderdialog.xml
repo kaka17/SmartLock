@@ -1,0 +1,87 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_heightPercent="40%w"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        >
+
+        <TextView
+            android:id="@+id/tvMessageLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:text="确认取消订单?"/>
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/forgetVerificationCode"
+            android:gravity="center"
+            android:background="@drawable/order_dialog_background"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/forgetTv_Order" />
+            -->
+
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/top_bar_normal_bg"
+                    android:text="@string/order_Person_Order_dialog02"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_IKnow" />
+                        -->
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_widthPercent="70%"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnOrderCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不了"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:background="@null" />
+
+
+        <Button
+            android:id="@+id/btnOrderSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

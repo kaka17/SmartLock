@@ -1,0 +1,101 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_widthPercent="18%"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/order_dialog_background"
+        app:layout_widthPercent="75%"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Submit_PayType"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/tv_Order" />
+        <RadioGroup
+            android:id="@+id/rg_Pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+
+            >
+
+
+            <RadioButton
+                android:id="@+id/rb_pay01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_info_pay_01"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                />
+            <RadioButton
+                android:id="@+id/rb_pay02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_info_pay_02"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                />
+            <RadioButton
+                android:id="@+id/rb_pay03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_info_pay_03"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                />
+
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textColor="@color/top_bar_normal_bg"
+                android:text="@string/dialog_opendoor_cancel"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv_No" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textColor="@color/top_bar_normal_bg"
+                android:text="@string/dialog_opendoor_sure"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv_Sure" />
+        </LinearLayout>
+    </LinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

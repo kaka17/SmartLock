@@ -1,0 +1,106 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical"
+	>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	<com.zhy.android.percent.support.PercentLinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			>
+	<View
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:background="@color/light_gray"
+		android:layout_below="@+id/include"
+		app:layout_heightPercent="2%"/>
+
+<com.zhy.android.percent.support.PercentRelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	app:layout_heightPercent="30%">
+
+		<com.sht.smartlock.ui.activity.myview.CircleImageView
+			android:id="@+id/image_head"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:src="@drawable/centerhead"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			app:layout_heightPercent="60%"
+			app:layout_widthPercent="30%"/>
+
+	<TextView
+		android:id="@+id/tv_username"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/tab_mine_login_regist"
+		android:layout_below="@+id/image_head"
+		android:layout_centerHorizontal="true"
+		app:layout_textSizePercent="4%w"/>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+	<View
+		android:id="@+id/buttomline"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:background="@color/light_gray"
+		android:layout_below="@+id/myLinearTop"
+		app:layout_heightPercent="2%"/>
+
+	<ListView
+		android:id="@+id/list_person_stting"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/buttomline"
+		/>
+
+		</com.zhy.android.percent.support.PercentLinearLayout>
+		<com.zhy.android.percent.support.PercentRelativeLayout
+			android:id="@+id/reGuiDe"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:background="@color/BANTOUMINGSE"
+			android:visibility="gone"
+			>
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@drawable/pic"
+				android:layout_marginTop="25dp"
+				android:layout_marginLeft="32dp"
+				android:layout_marginRight="32dp"
+				app:layout_marginTopPercent="5%h"
+				app:layout_marginBottomPercent="20%h"
+				app:layout_marginLeftPercent="6%h"
+				app:layout_marginRightPercent="6%h"
+				/>
+			<ImageView
+				android:id="@+id/ivIKnow"
+				android:layout_width="110dp"
+				android:layout_height="46dp"
+				android:src="@drawable/btn_knowed"
+				android:layout_gravity="bottom|center_horizontal"
+				android:layout_marginBottom="60dp"
+				app:layout_marginBottomPercent="12%h"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				/>
+		</com.zhy.android.percent.support.PercentRelativeLayout>
+	</FrameLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

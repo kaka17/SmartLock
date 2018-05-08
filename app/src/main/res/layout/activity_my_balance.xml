@@ -1,0 +1,60 @@
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relateBalance"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        style="@style/MainTabBg"
+        >
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            />
+
+        <TextView
+            android:id="@+id/tvTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="@string/mation_titleCode"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bancleTopline"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/BalanceGragColor"
+        android:layout_below="@+id/relateBalance"
+        />
+    <RelativeLayout
+        android:id="@+id/reEnpty"
+        android:layout_below="@+id/vLineBill1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:src="@drawable/pic_anime_failed"
+            />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listBancle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/bancleTopline"/>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

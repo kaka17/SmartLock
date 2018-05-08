@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.cloopen.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <SurfaceView 
+        android:id="@+id/surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+	<TextView 
+	    android:id="@+id/text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="22.0dip"
+	    android:background="@color/black"
+	    android:alpha="50"
+	    android:gravity="center_vertical"
+	    android:layout_gravity="bottom"
+	    android:paddingLeft="4.0dip"
+	    android:textColor="@color/white"
+	    android:paddingRight="4.0dip"/>
+<!-- 	    android:drawableRight="@drawable/three_point" -->
+</FrameLayout>

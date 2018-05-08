@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sht.smartlock.phone.ui.interphone.InterPhoneMicController xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inter_phone_speak_ly"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/bottom"
+    android:background="#D4D4D4">
+
+    <Button
+        android:id="@+id/inter_phone_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/voice_rec_button_selector" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="7.0dip"
+        android:textColor="@color/blue"
+        android:textSize="13.0sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</com.sht.smartlock.phone.ui.interphone.InterPhoneMicController>

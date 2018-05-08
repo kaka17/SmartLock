@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:30"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/NewRegistInColorText"
+            />
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017/06/08"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/TextBlack054"
+        android:layout_toRightOf="@+id/tvTime"
+        />
+    <TextView
+        android:id="@+id/tvTimeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8小时10分后提醒"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/TextBlack054"
+       android:layout_below="@+id/tvTime"
+        android:layout_marginBottom="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/btn_delete_time"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_702"
+        android:layout_below="@+id/tvTimeOut"
+        />
+
+</RelativeLayout>

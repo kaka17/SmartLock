@@ -1,0 +1,89 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%"
+        style="@style/MainTabBg">
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:clickable="true"
+            style="@style/goback"
+            android:src="@drawable/btn_back"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTitlePanel"
+            style="@style/titlename"
+            android:layout_centerInParent="true"
+            android:text="我是标题"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_gray"
+        app:layout_heightPercent="2%"/>
+
+<com.zhy.android.percent.support.PercentRelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_heightPercent="100%"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvCommentLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="评论"/>
+
+
+    <EditText
+        android:id="@+id/editCommentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="90%"
+        android:gravity="top"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/iamgeeditcomment"
+        android:layout_toRightOf="@+id/tvCommentLocal"
+        android:hint="环境不错，服务很周到，好评，下次再来。"/>
+
+
+    <Button
+        android:id="@+id/btnComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发表评论"
+        android:layout_marginTop="10dp"
+        app:layout_heightPercent="6%"
+        android:textColor="@color/white"
+        android:layout_alignRight="@+id/editCommentText"
+        android:background="@drawable/btnimagebluecomment"
+        android:layout_below="@+id/editCommentText"/>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

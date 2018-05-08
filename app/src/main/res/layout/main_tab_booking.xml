@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/long_line"
+        app:layout_marginTopPercent="2%h"
+        app:layout_widthPercent="100%w"></ImageView>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ly_datetimepicker"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_heightPercent="15%h"
+
+        app:layout_widthPercent="100%w"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="@color/title_background"
+            app:layout_widthPercent="20%w" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_widthPercent="60%w">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_in" />
+
+                <TextView
+                    android:id="@+id/checkInDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="09月23日"
+                    android:textColor="@color/text_font" />
+
+                <TextView
+                    android:id="@+id/checkInWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="周三"
+                    android:textColor="@color/text_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_marginTopPercent="20%h">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_out" />
+
+                <TextView
+                    android:id="@+id/checkOutDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="09月23日"
+                    android:textColor="@color/text_font" />
+
+                <TextView
+                    android:id="@+id/checkOutWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="周三"
+                    android:textColor="@color/text_font" />
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        <TextView
+            android:id="@+id/totalDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableEnd="@drawable/submenu"
+            android:drawableRight="@drawable/submenu"
+            android:text="3"
+            app:layout_widthPercent="15%w" />
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/short_line"></ImageView>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:layout_heightPercent="10%h"
+        app:layout_widthPercent="100%w">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/city"
+            android:textColor="@color/title_background"
+            app:layout_widthPercent="20%w"></TextView>
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:drawableEnd="@drawable/submenu"
+            android:drawableRight="@drawable/submenu"
+            android:gravity="left|center"
+            android:hint="@string/select_city"
+            android:textColor="@color/text_font"
+            android:textSize="23sp"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_widthPercent="65%w"></TextView>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/short_line"
+        app:layout_widthPercent="90%w"></ImageView>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:layout_heightPercent="10%h"
+        app:layout_widthPercent="100%w">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/destination"
+            android:textColor="@color/title_background"
+            app:layout_widthPercent="20%w"></TextView>
+
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:drawableEnd="@drawable/submenu"
+            android:drawableRight="@drawable/submenu"
+            android:gravity="left|center"
+            android:hint="@string/place_or_hotel"
+            android:textColor="@color/text_font"
+            android:textSize="23sp"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_widthPercent="65%w"></TextView>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/short_line"
+        app:layout_widthPercent="90%w"></ImageView>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:layout_heightPercent="10%h"
+        app:layout_widthPercent="100%w">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/price"
+            android:textColor="@color/title_background"
+            app:layout_widthPercent="20%w"></TextView>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:drawableEnd="@drawable/submenu"
+            android:drawableRight="@drawable/submenu"
+            android:gravity="left|center"
+            android:hint="不限价格"
+            android:textColor="@color/text_font"
+            android:textSize="23sp"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_widthPercent="65%w"></TextView>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/short_line"
+        app:layout_widthPercent="100%w"></ImageView>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/search_hotel_button_bg"
+        android:paddingLeft="20dp"
+        android:text="@string/search_hotel"
+        android:textColor="@color/text_normal"
+        android:textSize="22sp"
+        app:layout_marginTopPercent="5%h" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        app:layout_marginBottomPercent="2%h"
+        app:layout_marginTopPercent="10%h"
+        app:layout_widthPercent="100%w">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/short_line"
+            app:layout_widthPercent="100%w"></ImageView>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="@drawable/common_tab_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/tvNearbyHotel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/near_hotel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:text="@string/nearby_hotel"
+                    android:textColor="@color/title_background"></TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/vertical_divider"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:background="@drawable/common_tab_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/tvHourRoom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/hour_room" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:text="@string/hour_room"
+                    android:textColor="@color/title_background"></TextView>
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/short_line"
+            app:layout_widthPercent="100%w"></ImageView>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/app_margin_small"
+    android:paddingLeft="@dimen/app_margin_small"
+    android:paddingRight="@dimen/app_margin_small"
+    android:paddingTop="@dimen/app_margin_small" >
+
+    <ImageView
+        android:id="@+id/img_product_icon"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:padding="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/noimg2" />
+
+    <TextView
+        android:id="@+id/tv_order_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/app_order"
+        android:layout_toRightOf="@id/img_product_icon"
+        android:ellipsize="end"
+        android:ems="10"
+        android:singleLine="true"
+        android:textColor="@color/order_Menu_title"
+        android:textSize="18sp"
+        android:text="西红柿炒鸡蛋" />
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="营业时间：8：00-12:00"
+        android:layout_marginLeft="@dimen/app_order"
+        android:layout_toRightOf="@id/img_product_icon"
+        android:layout_below="@+id/tv_product_single_price"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_single_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/tv_order_product_title"
+        android:layout_marginLeft="@dimen/app_order"
+        android:layout_toRightOf="@id/img_product_icon"
+        android:text="￥10.0"
+        android:textSize="18sp"
+        android:textColor="@color/BiLLTextColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_order_product_title"
+        android:layout_toRightOf="@id/tv_product_single_price"
+        android:layout_marginBottom="4dp"
+        android:gravity="right|bottom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_order_sub"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_deleteservicer"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_order_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_addservicer" />
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/tvTime"
+        android:layout_marginLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="0.1dp"
+        android:background="@drawable/interval"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sht.smartlock.phone.ui.CallPhoneActivity">
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:phoneNumber="true"
+        android:inputType="none" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="#000000"
+            android:keyBackground="@drawable/board"
+            android:keyTextColor="#000000"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnBoH"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="拨号"
+            android:layout_below="@+id/keyboard_view"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
